@@ -28,6 +28,8 @@ img { max-width: 100%; display: block; }
 /* Nav */
 .nav { display: flex; justify-content: space-between; align-items: center; padding: 32px 0; font-size: 14px; }
 .nav .links { display: flex; gap: 24px; }
+.nav .logo { color: var(--text); font-size: 26px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+.nav .logo:hover { opacity: .8; }
 .nav a { color: var(--muted); transition: color .2s; }
 .nav a:hover, .nav a.active { color: var(--text); }
 
