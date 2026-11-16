@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Oleksii Yukhymets · Work</title>
+  <title>Oleksii Yukhymets • Work</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,58 +20,98 @@
       </div>
     </nav>
 
-    <!-- Case study template: copy this file (e.g. work-project-two.html) for each project -->
-    <header class="case-hero">
-      <div class="meta"><strong>Company One</strong> · Product Designer · 2024 – 2026</div>
-      <h1>[Project title — one line describing what you shipped.]</h1>
-      <p>[Context: what the company does, what problem you were solving and what your role was.]</p>
-    </header>
-
-    <div class="facts">
-      <div>
-        <h4>Contributions</h4>
-        <div>Research</div><div>Information architecture</div><div>UI design</div><div>Design system</div>
-      </div>
-      <div>
-        <h4>Team</h4>
-        <div>[1 PM, 4 engineers]</div>
-      </div>
-      <div>
-        <h4>Result</h4>
-        <div>[+X% conversion, shipped to N users]</div>
-      </div>
+    <!-- Project tabs: one link per case study page -->
+    <div class="tabs">
+      <a href="work.html" class="tab active">Product Designer @ Company One</a>
+      <a href="#" class="tab">UX/UI Designer @ Company Two</a>
     </div>
 
-    <section class="block">
-      <h2>The problem</h2>
+    <header class="cs-hero">
+      <div class="eyebrow">2024 – 2026</div>
+      <h1>[Started as a designer on one product — I went on to lead the design of many areas for <a href="#" class="u">Company One</a>, a platform <span class="dim">(web, mobile, etc)</span> focused on [industry].]</h1>
+    </header>
+
+    <!-- Replace .shot inner text with <img src="images/..." alt="..."> -->
+    <figure class="shot shot-accent">
+      <figcaption>
+        <strong>[Product 2.0 — Shipped 2025]</strong>
+        <span>[One-line description of what this screen shows]</span>
+      </figcaption>
+      <div class="shot-frame">Main screenshot</div>
+    </figure>
+
+    <section class="cs-row">
+      <h2>[I was part of the core team that shipped the next generation of the product.]</h2>
       <div>
-        <p>[Describe the user problem and the business goal.]</p>
-        <div class="placeholder-img">Image / screenshot</div>
+        <p class="lead">[In 2025, the company re-focused its product strategy toward a new audience — describe the context and why it mattered.]</p>
+        <div class="cols">
+          <div>
+            <h4>Product contributions</h4>
+            <ul><li>Information architecture</li><li>Search</li><li>Design system</li><li>Notifications</li></ul>
+          </div>
+          <div>
+            <h4>Research</h4>
+            <ul><li>User interviews</li><li>Usability testing</li></ul>
+          </div>
+          <div>
+            <h4>Titles held</h4>
+            <ul><li>Product Designer</li><li>UX/UI Designer</li></ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="block">
-      <h2>Process</h2>
+    <figure class="shot">
+      <figcaption>
+        <strong>[Annotated view of the main surface]</strong>
+        <span class="legend">
+          <span><i style="--c:#3b82f6"></i>[Tools &amp; settings]</span>
+          <span><i style="--c:#ef4444"></i>[Reacting]</span>
+          <span><i style="--c:#f59e0b"></i>[Being proactive]</span>
+        </span>
+      </figcaption>
+      <div class="shot-frame">Annotated screenshot</div>
+    </figure>
+
+    <section class="cs-row">
+      <h2>[An information architecture built from first principles.]</h2>
       <div>
-        <p>[Research, insights, sketches, iterations — what you learned along the way.]</p>
-        <div class="placeholder-img">Image / screenshot</div>
+        <p class="lead">[What you re-organized, for whom, and the main idea behind the new structure.]</p>
+        <div class="cols">
+          <div>
+            <h4><i class="dot" style="--c:#ef4444"></i>[Principle one]</h4>
+            <p>[Short explanation of the first design principle or decision.]</p>
+          </div>
+          <div>
+            <h4><i class="dot" style="--c:#f59e0b"></i>[Principle two]</h4>
+            <p>[Short explanation of the second design principle or decision.]</p>
+          </div>
+          <div>
+            <h4><i class="dot" style="--c:#3b82f6"></i>[Principle three]</h4>
+            <p>[Short explanation of the third design principle or decision.]</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="block">
-      <h2>Solution</h2>
+    <section class="cs-row">
+      <h2>[Learning from our users]</h2>
       <div>
-        <p>[Final design and key decisions.]</p>
-        <div class="placeholder-img">Image / screenshot</div>
+        <p class="lead">[How you did research — interviews, visits, testing — and what it changed.]</p>
       </div>
     </section>
 
-    <section class="block">
-      <h2>Outcome</h2>
-      <div>
-        <p>[Metrics, feedback, what you would do differently.]</p>
-      </div>
-    </section>
+    <figure class="shot">
+      <figcaption><span>[Before — the inherited product]</span></figcaption>
+      <div class="shot-frame">Before / after</div>
+    </figure>
+
+    <hr class="divider">
+
+    <!-- Next project -->
+    <a href="#" class="next">
+      <div class="next-card" style="background:#0070dd">Next project →</div>
+    </a>
 
     <div class="thanks"><span>Thanks.</span></div>
   </div>
