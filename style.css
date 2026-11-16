@@ -91,8 +91,9 @@ img { max-width: 100%; display: block; }
 /* Section */
 .section-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
 .section-head .section-title { margin-bottom: 0; }
+.btn-ghost { display: inline-flex; align-items: center; gap: 8px; color: var(--text); font-size: 14px; font-weight: 500; padding: 10px 20px; border-radius: 999px; box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--text) 30%, transparent); transition: box-shadow .2s; }
+.btn-ghost:hover { box-shadow: inset 0 0 0 1.5px var(--text); }
 .btn-cv svg { width: 16px; height: 16px; }
-.section-head .btn-cv { align-self: flex-end; padding-bottom: 6px; }
 .section-title { font-size: 32px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 48px; }
 
 /* Project cards */

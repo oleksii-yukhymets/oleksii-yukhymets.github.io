@@ -122,5 +122,6 @@ window.I18N_UK = {
   "dm_rh": "Фудтех",
   "dm_am": "Крипто · Фінтех",
   "dm_mb": "Крипто · SaaS",
-  "l_cv_dl": "Завантажити CV"
+  "l_cv_dl": "Завантажити PDF",
+  "l_cv_pdf": "CV (PDF)"
 };
