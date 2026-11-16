@@ -111,8 +111,16 @@ img { max-width: 100%; display: block; }
 .info h4 { color: var(--muted); font-weight: 400; margin-bottom: 24px; }
 .info .item { margin-bottom: 16px; }
 .info .item span { display: block; color: var(--muted); }
-.thanks { display: flex; justify-content: flex-end; padding: 40px 0 60px; }
-.thanks span { background: var(--surface); padding: 14px 20px; border-radius: 12px; font-size: 14px; }
+.thanks { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 40px 0 60px; }
+.socials { display: flex; gap: 12px; }
+.socials a { display: block; line-height: 0; }
+.socials .si-bg { fill: #7c7f80; transition: fill .2s; }
+.socials .si-fg { fill: var(--bg); }
+.socials a:hover .si-bg { fill: var(--accent); }
+.socials a:hover .si-fg { fill: #fff; }
+.thanks-msg { display: flex; align-items: center; gap: 12px; }
+.thanks-msg img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+.thanks-msg span { background: var(--surface); padding: 14px 20px; border-radius: 12px; font-size: 14px; }
 
 /* Case study */
 .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
