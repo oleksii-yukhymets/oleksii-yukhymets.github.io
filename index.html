@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
@@ -31,7 +31,6 @@
           <a href="portfolio.html" data-i18n="t0">Portfolio</a>
           <a href="#contact" data-i18n="t2">Contact</a>
         </div>
-        <a class="nav-cv" href="Oleksii-Yukhymets-CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg><span data-i18n="l_cv">CV</span></a>
         <div class="lang">
           <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language">
             <span class="lang-current">EN</span>
@@ -63,7 +62,10 @@
     </header>
 
     <section id="experience" class="section">
-      <h2 class="section-title" data-i18n="t1">Experience</h2>
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="t1">Experience</h2>
+        <a class="btn btn-outline btn-cv" href="Oleksii-Yukhymets-CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg><span data-i18n="l_cv_dl">Download CV</span></a>
+      </div>
       <div class="job">
         <div class="job-company">
           <h3><a class="co-link" href="https://www.linkedin.com/company/mediasapiens-digital-agency/" target="_blank" rel="noopener">MEDIASAPIENS<span aria-hidden="true">↗</span></a></h3>

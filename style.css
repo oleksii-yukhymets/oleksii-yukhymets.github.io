@@ -54,9 +54,6 @@ img { max-width: 100%; display: block; }
 .nav a { color: var(--muted); transition: color .2s; }
 .nav a:hover, .nav a.active { color: var(--text); }
 .nav .right { display: flex; align-items: center; gap: 24px; }
-.nav a.nav-cv { display: inline-flex; align-items: center; gap: 6px; color: var(--text); padding: 7px 14px; border-radius: 999px; box-shadow: inset 0 0 0 1.5px var(--accent); transition: background .2s, color .2s; }
-.nav a.nav-cv svg { width: 15px; height: 15px; }
-.nav a.nav-cv:hover { background: var(--accent); color: var(--on-accent); }
 .theme-toggle { position: relative; z-index: 9999; border: 0; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; background: var(--surface); color: var(--text); box-shadow: 0 0 0 1.5px var(--frame-border); transition: background .3s ease, color .3s ease, transform .15s ease, box-shadow .3s ease; }
 .theme-toggle:hover { transform: scale(1.1); }
 .theme-toggle:active { transform: scale(.96); }
@@ -92,6 +89,10 @@ img { max-width: 100%; display: block; }
 .avatar { width: 240px; height: 240px; border-radius: 50%; flex-shrink: 0; background: var(--surface); display: grid; place-items: center; color: var(--muted); font-size: 48px; font-weight: 600; overflow: hidden; object-fit: cover; }
 
 /* Section */
+.section-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+.section-head .section-title { margin-bottom: 0; }
+.btn.btn-cv { display: inline-flex; align-items: center; gap: 8px; }
+.btn-cv svg { width: 16px; height: 16px; }
 .section-title { font-size: 32px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 48px; }
 
 /* Project cards */
