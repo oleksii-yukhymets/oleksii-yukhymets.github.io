@@ -32,7 +32,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  transition: background-color .25s, color .25s;
+  transition: background-color .3s ease, color .3s ease;
   background: var(--bg);
   color: var(--text);
   font-family: "Google Sans Flex", system-ui, -apple-system, sans-serif;
@@ -54,12 +54,17 @@ img { max-width: 100%; display: block; }
 .nav a { color: var(--muted); transition: color .2s; }
 .nav a:hover, .nav a.active { color: var(--text); }
 .nav .right { display: flex; align-items: center; gap: 24px; }
-.theme-toggle { background: none; border: 1px solid var(--surface); color: var(--muted); width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; transition: color .2s, border-color .2s; }
-.theme-toggle:hover { color: var(--text); border-color: var(--muted); }
-.theme-toggle svg { width: 16px; height: 16px; }
-.theme-toggle .sun { display: none; }
-[data-theme="light"] .theme-toggle .sun { display: block; }
-[data-theme="light"] .theme-toggle .moon { display: none; }
+.theme-toggle { position: relative; z-index: 9999; border: 0; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; background: var(--surface); color: var(--text); box-shadow: 0 0 0 1.5px var(--frame-border); transition: background .3s ease, color .3s ease, transform .15s ease, box-shadow .3s ease; }
+.theme-toggle:hover { transform: scale(1.1); }
+.theme-toggle:active { transform: scale(.96); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.theme-toggle svg { width: 15px; height: 15px; }
+/* Icon shows the theme you will switch to: sun in dark, moon in light */
+.theme-toggle .moon { display: none; }
+[data-theme="light"] .theme-toggle .moon { display: block; }
+[data-theme="light"] .theme-toggle .sun { display: none; }
+.theme-curtain { position: fixed; inset: 0; z-index: 9997; pointer-events: none; transform-origin: top; transform: scaleY(0); transition: transform 550ms cubic-bezier(0.76, 0, 0.24, 1); }
+.theme-curtain.is-falling { transform: scaleY(1); }
 
 /* Hero */
 .hero { display: flex; justify-content: space-between; align-items: center; gap: 48px; padding: 160px 0 200px; }
