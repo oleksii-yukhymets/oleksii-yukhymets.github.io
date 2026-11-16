@@ -91,7 +91,6 @@ img { max-width: 100%; display: block; }
 /* Section */
 .section-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
 .section-head .section-title { margin-bottom: 0; }
-.btn-cv { color: var(--muted); }
 .btn-cv svg { width: 16px; height: 16px; }
 .section-head .btn-cv { align-self: flex-end; padding-bottom: 6px; }
 .section-title { font-size: 32px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 48px; }
