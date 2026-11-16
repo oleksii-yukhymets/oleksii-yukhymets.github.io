@@ -178,8 +178,14 @@ img { max-width: 100%; display: block; }
 .job { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; padding: 32px 0; border-top: 1px solid var(--surface); }
 .job-dates { color: var(--muted); font-size: 14px; }
 .job h3 { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
-.job h3 span { color: var(--muted); font-weight: 400; }
+.job h3 > span:last-child { color: var(--muted); font-weight: 400; }
 .job p { color: var(--muted); }
+.job p.job-about { color: var(--text); margin-bottom: 4px; }
+.co-link { color: var(--text); border-bottom: 1px solid var(--frame-border); transition: color .2s, border-color .2s; }
+.co-link span { margin-left: 3px; font-size: .85em; color: var(--muted); }
+.co-link:hover { color: var(--accent-text); border-color: var(--accent-text); }
+.job li a { color: var(--text); text-decoration: underline; text-decoration-color: var(--frame-border); text-underline-offset: 3px; }
+.job li a:hover { color: var(--accent-text); text-decoration-color: var(--accent-text); }
 .job ul { margin-top: 12px; padding-left: 18px; color: var(--muted); }
 .job li { margin-bottom: 6px; }
 .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; }
