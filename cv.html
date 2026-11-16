@@ -10,11 +10,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=6">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
   <script src="theme.js?v=2" defer></script>
+  <script src="i18n-uk.js" defer></script>
+  <script src="lang.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -22,9 +24,19 @@
       <a href="index.html" class="logo" aria-label="Oleksii Yukhymets — Home">O<span class="accent">_</span>Y</a>
       <div class="right">
         <div class="links">
-          <a href="index.html#work">Work</a>
-          <a href="cv.html" class="active">CV</a>
-          <a href="index.html#about">About</a>
+          <a href="index.html#work" data-i18n="t0">Work</a>
+          <a href="cv.html" class="active" data-i18n="t3">CV</a>
+          <a href="index.html#about" data-i18n="t4">About</a>
+        </div>
+        <div class="lang">
+          <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language">
+            <span class="lang-current">EN</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="lang-menu" hidden>
+            <li><button type="button" data-lang="en">EN</button></li>
+            <li><button type="button" data-lang="uk">UA</button></li>
+          </ul>
         </div>
         <button class="theme-toggle" type="button" aria-label="Switch theme">
           <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>

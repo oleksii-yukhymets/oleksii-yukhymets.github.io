@@ -13,21 +13,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
   <script src="theme.js?v=2" defer></script>
+  <script src="i18n-uk.js" defer></script>
+  <script src="lang.js" defer></script>
 </head>
-<body>
+<body data-page="home">
   <div class="container">
     <nav class="nav">
       <a href="index.html" class="logo" aria-label="Oleksii Yukhymets — Home">O<span class="accent">_</span>Y</a>
       <div class="right">
         <div class="links">
-          <a href="#work">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+          <a href="#work" data-i18n="t0">Work</a>
+          <a href="#experience" data-i18n="t1">Experience</a>
+          <a href="#contact" data-i18n="t2">Contact</a>
+        </div>
+        <div class="lang">
+          <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language">
+            <span class="lang-current">EN</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="lang-menu" hidden>
+            <li><button type="button" data-lang="en">EN</button></li>
+            <li><button type="button" data-lang="uk">UA</button></li>
+          </ul>
         </div>
         <button class="theme-toggle" type="button" aria-label="Switch theme">
           <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -38,8 +50,8 @@
 
     <header class="hero">
       <div>
-        <h1>Hi, I'm Oleksii — a <span class="accent">Digital Designer</span></h1>
-        <p class="hero-sub">Product, UX/UI and design in code. 8+ years designing web and mobile products for fintech, crypto, healthcare and e-commerce — and now building them too: I use AI tools to turn designs into working interfaces, dashboards and apps.</p>
+        <h1 data-i18n="t5">Hi, I'm Oleksii — a <span class="accent">Digital Designer</span></h1>
+        <p class="hero-sub" data-i18n="t6">Product, UX/UI and design in code. 8+ years designing web and mobile products for fintech, crypto, healthcare and e-commerce — and now building them too: I use AI tools to turn designs into working interfaces, dashboards and apps.</p>
         <div class="cta">
           <a class="btn" href="https://t.me/lex_mets" target="_blank" rel="noopener">Telegram</a>
           <a class="btn btn-outline" href="https://www.linkedin.com/in/alexey-yukhimets/" target="_blank" rel="noopener">LinkedIn</a>
@@ -49,58 +61,58 @@
     </header>
 
     <section id="work" class="section">
-      <h2 class="section-title">Selected work</h2>
+      <h2 class="section-title" data-i18n="t7">Selected work</h2>
       <a href="https://oleksii-yukhymets.notion.site/Hi-I-m-Oleksii-I-m-a-UX-UI-Designer-d5836c91fcfc4076b4e07abf8a28dc77" class="project" target="_blank" rel="noopener">
         <div>
-          <h3>As the sole designer, created Amabit.io — a crypto trading terminal with Binance, OKX and Bybit integrations, capital management tools and an analytics dashboard.</h3>
-          <div class="meta"><strong>Amabit.io</strong> · Sole UX/UI Designer</div>
-          <div class="tags"><span class="tag">Crypto</span><span class="tag">Trading</span><span class="tag">Web app</span></div>
+          <h3 data-i18n="t8">As the sole designer, created Amabit.io — a crypto trading terminal with Binance, OKX and Bybit integrations, capital management tools and an analytics dashboard.</h3>
+          <div class="meta" data-i18n="t14"><strong>Amabit.io</strong> · Sole UX/UI Designer</div>
+          <div class="tags"><span class="tag" data-i18n="t19">Crypto</span><span class="tag" data-i18n="t20">Trading</span><span class="tag" data-i18n="t21">Web app</span></div>
         </div>
         <div class="cover" style="background:#1d4ed8">Amabit.io</div>
       </a>
       <a href="https://oleksii-yukhymets.notion.site/CRM-Payment-System-dc3a13f246e848c8b02aa31b53f02e86" class="project" target="_blank" rel="noopener">
         <div>
-          <h3>Designed a CRM admin panel for a payment system: 8 sections and 80+ screens in 3 months, built on the MUI design system.</h3>
-          <div class="meta"><strong>RVA Fintech</strong> · UX/UI Designer</div>
-          <div class="tags"><span class="tag">B2B</span><span class="tag">Fintech</span><span class="tag">Admin panel</span></div>
+          <h3 data-i18n="t9">Designed a CRM admin panel for a payment system: 8 sections and 80+ screens in 3 months, built on the MUI design system.</h3>
+          <div class="meta" data-i18n="t17"><strong>RVA Fintech</strong> · UX/UI Designer</div>
+          <div class="tags"><span class="tag">B2B</span><span class="tag" data-i18n="t22">Fintech</span><span class="tag" data-i18n="t23">Admin panel</span></div>
         </div>
         <div class="cover" style="background:#7c3aed">CRM Payment System</div>
       </a>
       <a href="https://oleksii-yukhymets.notion.site/Visual-Bot-Builder-for-Trading-Crypto-SaaS-83731e360dcb4e9eb90ffdef12fbcf0f" class="project" target="_blank" rel="noopener">
         <div>
-          <h3>A visual bot builder that lets traders create automated crypto strategies without code.</h3>
-          <div class="meta"><strong>Aumify</strong> · Sole UX/UI Designer</div>
-          <div class="tags"><span class="tag">SaaS</span><span class="tag">Crypto</span><span class="tag">No-code</span></div>
+          <h3 data-i18n="t10">A visual bot builder that lets traders create automated crypto strategies without code.</h3>
+          <div class="meta" data-i18n="t15"><strong>Aumify</strong> · Sole UX/UI Designer</div>
+          <div class="tags"><span class="tag">SaaS</span><span class="tag" data-i18n="t19">Crypto</span><span class="tag">No-code</span></div>
         </div>
         <div class="cover" style="background:#0f766e">Visual Bot Builder</div>
       </a>
       <a href="https://oleksii-yukhymets.notion.site/Mobile-App-Crypto-Fiat-Wallet-e2233089fb2a4880bb87ada70775cfbc" class="project" target="_blank" rel="noopener">
         <div>
-          <h3>A mobile wallet for crypto and fiat — balances, exchange and payments in one app.</h3>
-          <div class="meta"><strong>RVA Fintech</strong> · UX/UI Designer</div>
-          <div class="tags"><span class="tag">Mobile</span><span class="tag">Fintech</span><span class="tag">Wallet</span></div>
+          <h3 data-i18n="t11">A mobile wallet for crypto and fiat — balances, exchange and payments in one app.</h3>
+          <div class="meta" data-i18n="t17"><strong>RVA Fintech</strong> · UX/UI Designer</div>
+          <div class="tags"><span class="tag" data-i18n="t24">Mobile</span><span class="tag" data-i18n="t22">Fintech</span><span class="tag" data-i18n="t25">Wallet</span></div>
         </div>
         <div class="cover" style="background:#b45309">Crypto &amp; Fiat Wallet</div>
       </a>
       <a href="https://oleksii-yukhymets.notion.site/Healthcare-Mobile-App-cfb24edb18c844879d34769dc8854fb0" class="project" target="_blank" rel="noopener">
         <div>
-          <h3>A healthcare mobile app that helps patients track and understand their lab results.</h3>
-          <div class="meta"><strong>Freelance</strong> · UX/UI Designer</div>
-          <div class="tags"><span class="tag">Healthcare</span><span class="tag">Mobile</span></div>
+          <h3 data-i18n="t12">A healthcare mobile app that helps patients track and understand their lab results.</h3>
+          <div class="meta" data-i18n="t16"><strong>Freelance</strong> · UX/UI Designer</div>
+          <div class="tags"><span class="tag" data-i18n="t26">Healthcare</span><span class="tag" data-i18n="t24">Mobile</span></div>
         </div>
         <div class="cover" style="background:#0e7490">Healthcare App</div>
       </a>
       <a href="https://oleksii-yukhymets.notion.site/AI-powered-blockchain-investment-platform-Taurum-ai-bbd574c22f444e8ab174e35fc61bbab1" class="project" target="_blank" rel="noopener">
         <div>
-          <h3>Taurum.ai — an AI-powered blockchain investment platform.</h3>
-          <div class="meta"><strong>Taurum.ai</strong> · UX/UI Designer</div>
-          <div class="tags"><span class="tag">AI</span><span class="tag">Web3</span><span class="tag">Investing</span></div>
+          <h3 data-i18n="t13">Taurum.ai — an AI-powered blockchain investment platform.</h3>
+          <div class="meta" data-i18n="t18"><strong>Taurum.ai</strong> · UX/UI Designer</div>
+          <div class="tags"><span class="tag">AI</span><span class="tag">Web3</span><span class="tag" data-i18n="t27">Investing</span></div>
         </div>
         <div class="cover" style="background:#be123c">Taurum.ai</div>
       </a>
 
       <div class="more">
-        <h3>More projects</h3>
+        <h3 data-i18n="t28">More projects</h3>
         <ul>
         <li><a href="https://oleksii-yukhymets.notion.site/CRM-ERP-for-Telecom-and-Web3-NFT-Game-Apps-2f5359b8a7914106b0f464275d66bff3" target="_blank" rel="noopener">CRM, ERP for Telecom and Web3 NFT Game Apps<span aria-hidden="true">↗</span></a></li>
         <li><a href="https://oleksii-yukhymets.notion.site/Delivery-App-209c05432b588006901afccab93c4222" target="_blank" rel="noopener">Delivery App<span aria-hidden="true">↗</span></a></li>
@@ -111,21 +123,21 @@
     </section>
 
     <section id="code" class="section ai">
-      <div class="eyebrow">Now</div>
-      <h2 class="ai-title">Design that ships as <span class="accent">code</span></h2>
+      <div class="eyebrow" data-i18n="t29">Now</div>
+      <h2 class="ai-title" data-i18n="t30">Design that ships as <span class="accent">code</span></h2>
       <div class="ai-grid">
-        <p class="lead">Since 2025 I design and build at the same time. I still explore in Figma, but the final design lives in code: with AI-assisted development I create working front-ends, dashboards and app prototypes that teams can use and test right away.</p>
+        <p class="lead" data-i18n="t31">Since 2025 I design and build at the same time. I still explore in Figma, but the final design lives in code: with AI-assisted development I create working front-ends, dashboards and app prototypes that teams can use and test right away.</p>
         <div class="cols">
           <div>
-            <h3>What I build</h3>
-            <ul><li>Web apps</li><li>Analytics dashboards</li><li>Front-end UI</li><li>Interactive prototypes</li></ul>
+            <h3 data-i18n="t32">What I build</h3>
+            <ul><li data-i18n="t33">Web apps</li><li data-i18n="t34">Analytics dashboards</li><li data-i18n="t35">Front-end UI</li><li data-i18n="t36">Interactive prototypes</li></ul>
           </div>
           <div>
-            <h3>How</h3>
-            <ul><li>Figma → code</li><li>AI-assisted development</li><li>Reusable components</li><li>Fast iterations</li></ul>
+            <h3 data-i18n="t37">How</h3>
+            <ul><li data-i18n="t38">Figma → code</li><li data-i18n="t39">AI-assisted development</li><li data-i18n="t40">Reusable components</li><li data-i18n="t41">Fast iterations</li></ul>
           </div>
           <div>
-            <h3>Tools</h3>
+            <h3 data-i18n="t42">Tools</h3>
             <ul><li>Figma</li><li>Claude Code</li><li>Cursor</li><li>GitHub</li></ul>
           </div>
         </div>
@@ -133,69 +145,69 @@
     </section>
 
     <section id="experience" class="section">
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title" data-i18n="t1">Experience</h2>
       <div class="job">
-        <div class="job-dates">Jul 2025 – Present</div>
+        <div class="job-dates" data-i18n="t43">Jul 2025 – Present</div>
         <div>
-          <h3>UX/UI Designer <span>· MEDIASAPIENS · Contract</span></h3>
-          <p>Designing products directly in code. Figma for exploration, then AI-assisted development to turn designs into working interfaces.</p><ul><li>Designed and built web apps and analytics dashboards end to end — from UX flows to production-ready front-end.</li><li>Moved the design process into code: interactive, data-driven prototypes instead of static mockups, shortening the path from idea to release.</li><li>Worked closely with developers on front-end implementation, keeping UI consistent through reusable components.</li></ul>
+          <h3 data-i18n="t48">UX/UI Designer <span>· MEDIASAPIENS · Contract</span></h3>
+          <p data-i18n="t50">Designing products directly in code. Figma for exploration, then AI-assisted development to turn designs into working interfaces.</p><ul><li data-i18n="t51">Designed and built web apps and analytics dashboards end to end — from UX flows to production-ready front-end.</li><li data-i18n="t52">Moved the design process into code: interactive, data-driven prototypes instead of static mockups, shortening the path from idea to release.</li><li data-i18n="t53">Worked closely with developers on front-end implementation, keeping UI consistent through reusable components.</li></ul>
         </div>
       </div>
       <div class="job">
-        <div class="job-dates">Dec 2024 – Present</div>
+        <div class="job-dates" data-i18n="t44">Dec 2024 – Present</div>
         <div>
-          <h3>Freelance UX/UI Designer <span>· Self-employed · Remote</span></h3>
-          <p>Web and mobile interfaces for engineering firms, e-commerce and B2B services, plus healthcare and iGaming products. Full cycle: research, wireframes, prototypes and polished UI, working directly with founders and dev teams.</p>
+          <h3 data-i18n="t49">Freelance UX/UI Designer <span>· Self-employed · Remote</span></h3>
+          <p data-i18n="t54">Web and mobile interfaces for engineering firms, e-commerce and B2B services, plus healthcare and iGaming products. Full cycle: research, wireframes, prototypes and polished UI, working directly with founders and dev teams.</p>
         </div>
       </div>
       <div class="job">
-        <div class="job-dates">Sep 2023 – Sep 2024</div>
+        <div class="job-dates" data-i18n="t45">Sep 2023 – Sep 2024</div>
         <div>
           <h3>Strong Middle / Senior UX/UI Designer <span>· Aumify</span></h3>
-          <p>As the sole designer: a visual bot builder for crypto trading, a beta crypto exchange and a Telegram crypto game. Flowcharts, layouts and clickable prototypes; worked with founders, PMs and engineers.</p>
+          <p data-i18n="t55">As the sole designer: a visual bot builder for crypto trading, a beta crypto exchange and a Telegram crypto game. Flowcharts, layouts and clickable prototypes; worked with founders, PMs and engineers.</p>
         </div>
       </div>
       <div class="job">
-        <div class="job-dates">May 2022 – Sep 2023</div>
+        <div class="job-dates" data-i18n="t46">May 2022 – Sep 2023</div>
         <div>
           <h3>Middle / Strong Middle UX/UI Designer <span>· RVA Fintech Solutions</span></h3>
-          <p>B2C interfaces for a payment system, crypto wallet, telecom and NFT gaming apps; B2B CRM and ERP, e-SIM app and NFT marketplace. Introduced the MUI React design system for admin panels.</p>
+          <p data-i18n="t56">B2C interfaces for a payment system, crypto wallet, telecom and NFT gaming apps; B2B CRM and ERP, e-SIM app and NFT marketplace. Introduced the MUI React design system for admin panels.</p>
         </div>
       </div>
       <div class="job">
-        <div class="job-dates">May 2018 – Feb 2022</div>
+        <div class="job-dates" data-i18n="t47">May 2018 – Feb 2022</div>
         <div>
           <h3>Junior / Middle UX/UI Designer <span>· Lenovo Ukraine</span></h3>
-          <p>Designed and launched shop.lenovo.ua, the lenovo.ua portal and service.lenovo.ua; marketing landing pages. Iterated with Google Analytics, Microsoft Clarity, Hotjar and customer feedback.</p>
+          <p data-i18n="t57">Designed and launched shop.lenovo.ua, the lenovo.ua portal and service.lenovo.ua; marketing landing pages. Iterated with Google Analytics, Microsoft Clarity, Hotjar and customer feedback.</p>
         </div>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <h2 class="section-title">Key skills</h2>
+      <h2 class="section-title" data-i18n="t58">Key skills</h2>
       <div class="skills">
-        <div><h3>UX design</h3><p>User research, testing, wireframes, prototypes and information architecture.</p></div>
-        <div><h3>UI design</h3><p>Consistent, functional interfaces for web, mobile and desktop.</p></div>
-        <div><h3>Design systems</h3><p>Creating and contributing to systems that keep large products consistent and scalable.</p></div>
-        <div><h3>Research</h3><p>Exploratory and validation research: interviews, surveys, usability testing.</p></div>
-        <div><h3>Design in code</h3><p>AI-assisted front-end development — from Figma to a working product.</p></div>
-        <div><h3>English</h3><p>Intermediate.</p></div>
+        <div><h3 data-i18n="t59">UX design</h3><p data-i18n="t65">User research, testing, wireframes, prototypes and information architecture.</p></div>
+        <div><h3 data-i18n="t60">UI design</h3><p data-i18n="t66">Consistent, functional interfaces for web, mobile and desktop.</p></div>
+        <div><h3 data-i18n="t61">Design systems</h3><p data-i18n="t67">Creating and contributing to systems that keep large products consistent and scalable.</p></div>
+        <div><h3 data-i18n="t62">Research</h3><p data-i18n="t68">Exploratory and validation research: interviews, surveys, usability testing.</p></div>
+        <div><h3 data-i18n="t63">Design in code</h3><p data-i18n="t69">AI-assisted front-end development — from Figma to a working product.</p></div>
+        <div><h3 data-i18n="t64">English</h3><p data-i18n="t70">Intermediate.</p></div>
       </div>
     </section>
 
     <footer id="contact" class="info">
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="t2">Contact</h4>
         <div class="item"><a href="mailto:alexey.yukhimets@gmail.com">alexey.yukhimets@gmail.com</a></div>
       </div>
       <div>
-        <h4>Social</h4>
+        <h4 data-i18n="t71">Social</h4>
         <div class="item"><a href="https://www.linkedin.com/in/alexey-yukhimets/" target="_blank" rel="noopener">LinkedIn</a></div>
         <div class="item"><a href="https://t.me/lex_mets" target="_blank" rel="noopener">Telegram @lex_mets</a></div>
       </div>
       <div>
-        <h4>More</h4>
-        <div class="item"><a href="https://oleksii-yukhymets.notion.site/Hi-I-m-Oleksii-I-m-a-UX-UI-Designer-d5836c91fcfc4076b4e07abf8a28dc77" target="_blank" rel="noopener">Previous portfolio (Notion)</a></div>
+        <h4 data-i18n="t72">More</h4>
+        <div class="item"><a href="https://oleksii-yukhymets.notion.site/Hi-I-m-Oleksii-I-m-a-UX-UI-Designer-d5836c91fcfc4076b4e07abf8a28dc77" target="_blank" rel="noopener" data-i18n="t73">Previous portfolio (Notion)</a></div>
       </div>
     </footer>
 
