@@ -15,12 +15,12 @@
 }
 
 [data-theme="light"] {
-  --bg: #f7f7f5;
-  --surface: #eaeae7;
+  --bg: #ffffff;
+  --surface: #f0f0f0;
   --text: #111214;
   --muted: #5f636b;
   --accent-text: #e85f15; /* darker so large text stays readable on light bg */
-  --shot-bg: linear-gradient(160deg, #ececea 0%, #e2e2df 100%);
+  --shot-bg: linear-gradient(160deg, #f4f4f4 0%, #eaeaea 100%);
   --frame-bg: rgba(0,0,0,.04);
   --frame-border: rgba(0,0,0,.08);
   --frame-text: rgba(0,0,0,.5);
