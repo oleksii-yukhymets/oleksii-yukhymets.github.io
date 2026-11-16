@@ -175,19 +175,19 @@ img { max-width: 100%; display: block; }
 .ai-title { font-size: clamp(30px, 4.2vw, 46px); font-weight: 500; line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 48px; }
 .ai-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .ai-grid .lead { color: var(--text); margin: 0; }
-.job { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; padding: 32px 0; border-top: 1px solid var(--surface); }
-.job-dates { color: var(--muted); font-size: 14px; }
-.job h3 { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
-.job h3 > span:last-child { color: var(--muted); font-weight: 400; }
-.job p { color: var(--muted); }
-.job p.job-about { color: var(--text); margin-bottom: 4px; }
+.job { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; padding: 48px 0; border-top: 1px solid var(--surface); }
+.job-company h3 { font-size: 18px; font-weight: 500; margin-bottom: 12px; }
+.job-years { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
+.job-desc { color: var(--muted); font-size: 14px; line-height: 1.6; max-width: 340px; }
+.job-roles h4 { font-size: 17px; font-weight: 500; margin-bottom: 14px; }
+.job-roles h4 > span:last-child { color: var(--muted); font-weight: 400; }
+.job-roles ul { list-style: none; color: var(--muted); }
+.job-roles li { margin-bottom: 12px; line-height: 1.6; }
 .co-link { color: var(--text); border-bottom: 1px solid var(--frame-border); transition: color .2s, border-color .2s; }
 .co-link span { margin-left: 3px; font-size: .85em; color: var(--muted); }
 .co-link:hover { color: var(--accent-text); border-color: var(--accent-text); }
 .job li a { color: var(--text); text-decoration: underline; text-decoration-color: var(--frame-border); text-underline-offset: 3px; }
 .job li a:hover { color: var(--accent-text); text-decoration-color: var(--accent-text); }
-.job ul { margin-top: 12px; padding-left: 18px; color: var(--muted); }
-.job li { margin-bottom: 6px; }
 .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; }
 .skills h3 { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
 .skills p { color: var(--muted); font-size: 14px; }
