@@ -189,7 +189,7 @@ img { max-width: 100%; display: block; }
 .co-link:hover { color: var(--accent-text); border-color: var(--accent-text); }
 .job li a { color: var(--text); text-decoration: underline; text-decoration-color: var(--frame-border); text-underline-offset: 3px; }
 .job li a:hover { color: var(--accent-text); text-decoration-color: var(--accent-text); }
-.proj-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text); margin: 32px 0 16px; }
+.proj-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text); margin: 32px 0 10px; }
 .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .job-roles li.proj { margin: 0; padding: 18px 20px; background: var(--surface); border-radius: 16px; }
 .job li a.proj-name { display: inline-block; color: var(--text); font-weight: 500; text-decoration: none; margin-bottom: 6px; }
