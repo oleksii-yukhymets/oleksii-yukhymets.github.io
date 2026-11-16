@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-15T17:14:43.380Z",
+        "reason": "agent decision: user asked to replicate reference portfolio which uses Inter"
+      }
+    ]
+  }
+}
