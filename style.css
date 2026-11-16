@@ -3,9 +3,9 @@
   --surface: #16171a;
   --text: #f1f2f4;
   --muted: #8b9098;
-  --accent: #ff752b;      /* buttons, lines */
-  --accent-text: #ff752b; /* accent-coloured text */
-  --on-accent: #080809;
+  --accent: #1c4ed7;      /* buttons, lines */
+  --accent-text: #4d7bf5; /* lighter on dark bg so text stays readable */
+  --on-accent: #ffffff;
   --shot-bg: linear-gradient(160deg, #17191f 0%, #0d0e11 100%);
   --frame-bg: rgba(255,255,255,.05);
   --frame-border: rgba(255,255,255,.08);
@@ -19,7 +19,7 @@
   --surface: #f0f0f0;
   --text: #111214;
   --muted: #5f636b;
-  --accent-text: #e85f15; /* darker so large text stays readable on light bg */
+  --accent-text: #1c4ed7;
   --shot-bg: linear-gradient(160deg, #f4f4f4 0%, #eaeaea 100%);
   --frame-bg: rgba(0,0,0,.04);
   --frame-border: rgba(0,0,0,.08);
