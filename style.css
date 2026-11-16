@@ -91,8 +91,9 @@ img { max-width: 100%; display: block; }
 /* Section */
 .section-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
 .section-head .section-title { margin-bottom: 0; }
-.btn.btn-cv { display: inline-flex; align-items: center; gap: 8px; }
+.btn-cv { color: var(--muted); }
 .btn-cv svg { width: 16px; height: 16px; }
+.section-head .btn-cv { align-self: flex-end; padding-bottom: 6px; }
 .section-title { font-size: 32px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 48px; }
 
 /* Project cards */
@@ -165,7 +166,10 @@ img { max-width: 100%; display: block; }
 .role li { margin-bottom: 6px; }
 
 /* Home sections */
-.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.cta { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; margin-top: 32px; }
+.text-link { display: inline-flex; align-items: center; gap: 6px; color: var(--text); font-size: 14px; font-weight: 500; transition: color .2s; }
+.text-link span[aria-hidden] { color: var(--muted); transition: color .2s; }
+.text-link:hover, .text-link:hover span[aria-hidden], .text-link:hover svg { color: var(--accent-text); }
 .btn-outline { background: transparent; color: var(--text); box-shadow: inset 0 0 0 1.5px var(--accent); }
 .btn-outline:hover { background: var(--accent); color: var(--on-accent); opacity: 1; }
 .section { padding: 40px 0 80px; }
