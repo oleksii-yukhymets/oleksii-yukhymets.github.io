@@ -83,7 +83,7 @@ img { max-width: 100%; display: block; }
 .cs-row h2 { font-size: 22px; font-weight: 500; line-height: 1.3; }
 .lead { font-size: 20px; line-height: 1.4; margin-bottom: 40px; }
 .cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; font-size: 13px; }
-.cols h4 { font-weight: 500; margin-bottom: 12px; }
+.cols h3 { font-size: 13px; font-weight: 500; margin-bottom: 12px; }
 .cols ul { list-style: none; color: var(--muted); }
 .cols li, .cols p { color: var(--muted); margin-bottom: 6px; }
 .divider { border: 0; border-top: 1px solid var(--surface); margin: 40px 0 80px; }
