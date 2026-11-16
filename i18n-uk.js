@@ -115,5 +115,11 @@ window.I18N_UK = {
   "tg_node": "Node-based UI",
   "tg_flows": "User flows",
   "l_site": "Сайт",
-  "l_case": "Кейс"
+  "l_case": "Кейс",
+  "dm_pd": "B2B SaaS · Фінтех",
+  "dm_ss": "Логістика · E-commerce",
+  "dm_mh": "Медицина",
+  "dm_rh": "Фудтех",
+  "dm_am": "Крипто · Фінтех",
+  "dm_mb": "Крипто · SaaS"
 };
