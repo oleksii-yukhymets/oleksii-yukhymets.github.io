@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
@@ -80,22 +80,22 @@
           <h5 class="proj-title" data-i18n="p_title">Key projects</h5>
           <ul class="projects">
             <li class="proj">
-              <a class="proj-name" href="https://plandesk.io" target="_blank" rel="noopener">PlanDesk<span aria-hidden="true">↗</span></a>
+              <div class="proj-head"><a class="proj-name" href="https://plandesk.io" target="_blank" rel="noopener">PlanDesk <span class="proj-dom">(plandesk.io)</span><span class="proj-arrow" aria-hidden="true">↗</span></a></div>
               <p data-i18n="p_pd">All-in-one business app for small companies and venues: invoicing with local tax rules, CRM, warehouse with OCR scanning, restaurant POS, booking and loyalty.</p>
               <div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">tRPC</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">Turborepo</span></div>
             </li>
             <li class="proj">
-              <a class="proj-name" href="https://shipstage.ai" target="_blank" rel="noopener">ShipStage<span aria-hidden="true">↗</span></a>
+              <div class="proj-head"><a class="proj-name" href="https://shipstage.ai" target="_blank" rel="noopener">ShipStage <span class="proj-dom">(shipstage.ai)</span><span class="proj-arrow" aria-hidden="true">↗</span></a></div>
               <p data-i18n="p_ss">Back office for a shipping platform: shipments, carrier labels and Shopify integration, on top of an existing Django API.</p>
               <div class="tags"><span class="tag">Next.js</span><span class="tag">tRPC</span><span class="tag">TanStack Query</span><span class="tag">shadcn/ui</span><span class="tag">Tailwind</span><span class="tag">Django REST</span></div>
             </li>
             <li class="proj">
-              <a class="proj-name" href="https://make.health" target="_blank" rel="noopener">Zyva · make.health<span aria-hidden="true">↗</span></a>
+              <div class="proj-head"><a class="proj-name" href="https://make.health" target="_blank" rel="noopener">Zyva <span class="proj-dom">(make.health)</span><span class="proj-arrow" aria-hidden="true">↗</span></a></div>
               <p data-i18n="p_mh">Health app that connects DNA, blood biomarkers and wearables: lab uploads, supplement scanning and an AI assistant. Native iOS and Android.</p>
               <div class="tags"><span class="tag">Kotlin Multiplatform</span><span class="tag">Jetpack Compose</span><span class="tag">SwiftUI</span><span class="tag">React Native</span></div>
             </li>
             <li class="proj">
-              <a class="proj-name" href="https://runninghub.es" target="_blank" rel="noopener">PA:CE Running Hub<span aria-hidden="true">↗</span></a>
+              <div class="proj-head"><a class="proj-name" href="https://runninghub.es" target="_blank" rel="noopener">PA:CE Running Hub <span class="proj-dom">(runninghub.es)</span><span class="proj-arrow" aria-hidden="true">↗</span></a></div>
               <p data-i18n="p_rh">Mobile app and website for a runners’ club and café in Barcelona: events, payments and QR passes.</p>
               <div class="tags"><span class="tag">React Native</span><span class="tag">Tamagui</span><span class="tag">Stripe</span><span class="tag">Next.js</span></div>
             </li>
@@ -121,16 +121,14 @@
           <h5 class="proj-title" data-i18n="p_title">Key projects</h5>
           <ul class="projects">
             <li class="proj">
-              <span class="proj-name">Amabit.io</span>
+              <div class="proj-head"><a class="proj-name" href="https://amabit.io/en" target="_blank" rel="noopener">Amabit <span class="proj-dom">(amabit.io)</span><span class="proj-arrow" aria-hidden="true">↗</span></a><a class="proj-case" href="https://oleksii-yukhymets.notion.site/Hi-I-m-Oleksii-I-m-a-UX-UI-Designer-d5836c91fcfc4076b4e07abf8a28dc77" target="_blank" rel="noopener" data-i18n="l_case">Case</a></div>
               <p data-i18n="p_am">Crypto trading terminal with Binance, OKX and Bybit integrations, PAMM accounts, capital management and an analytics dashboard.</p>
               <div class="tags"><span class="tag">Figma</span><span class="tag" data-i18n="tg_ds">Design system</span><span class="tag" data-i18n="tg_res">UX research</span><span class="tag" data-i18n="tg_proto">Prototyping</span><span class="tag" data-i18n="tg_web">Web app</span></div>
-              <div class="proj-links"><a href="https://amabit.io/en" target="_blank" rel="noopener"><span data-i18n="l_site">Website</span><span aria-hidden="true">↗</span></a><a href="https://oleksii-yukhymets.notion.site/Hi-I-m-Oleksii-I-m-a-UX-UI-Designer-d5836c91fcfc4076b4e07abf8a28dc77" target="_blank" rel="noopener"><span data-i18n="l_case">Case study</span><span aria-hidden="true">→</span></a></div>
             </li>
             <li class="proj">
-              <span class="proj-name">Metabot</span>
+              <div class="proj-head"><span class="proj-name">Metabot</span><a class="proj-case" href="https://oleksii-yukhymets.notion.site/Visual-Bot-Builder-for-Trading-Crypto-SaaS-83731e360dcb4e9eb90ffdef12fbcf0f" target="_blank" rel="noopener" data-i18n="l_case">Case</a></div>
               <p data-i18n="p_mb">Visual no-code bot builder: traders assemble automated crypto strategies from blocks and test them before going live.</p>
               <div class="tags"><span class="tag">Figma</span><span class="tag" data-i18n="tg_node">Node-based UI</span><span class="tag" data-i18n="tg_flows">User flows</span><span class="tag" data-i18n="tg_proto">Prototyping</span><span class="tag">SaaS</span></div>
-              <div class="proj-links"><a href="https://oleksii-yukhymets.notion.site/Visual-Bot-Builder-for-Trading-Crypto-SaaS-83731e360dcb4e9eb90ffdef12fbcf0f" target="_blank" rel="noopener"><span data-i18n="l_case">Case study</span><span aria-hidden="true">→</span></a></div>
             </li>
           </ul>
         </div>

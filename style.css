@@ -192,17 +192,16 @@ img { max-width: 100%; display: block; }
 .proj-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text); margin: 32px 0 10px; }
 .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .job-roles li.proj { margin: 0; padding: 18px 20px; background: var(--surface); border-radius: 16px; }
-.job li a.proj-name { display: inline-block; color: var(--text); font-weight: 500; text-decoration: none; margin-bottom: 6px; }
-.job li a.proj-name span { margin-left: 4px; color: var(--muted); }
+.proj-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.job li .proj-name { color: var(--text); font-weight: 500; text-decoration: none; }
+.proj-dom { color: var(--muted); font-weight: 400; }
+.proj-arrow { margin-left: 4px; color: var(--muted); }
 .job li a.proj-name:hover, .job li a.proj-name:hover span { color: var(--accent-text); }
+.job li a.proj-case { flex-shrink: 0; font-size: 13px; color: var(--text); text-decoration: none; padding: 5px 14px; border-radius: 999px; box-shadow: inset 0 0 0 1.5px var(--accent); transition: background .2s, color .2s; }
+.job li a.proj-case:hover { background: var(--accent); color: var(--on-accent); }
 .proj p { font-size: 14px; line-height: 1.55; }
 .proj .tags { margin-top: 12px; }
 .proj .tag { background: var(--bg); }
-.job-roles span.proj-name { display: block; color: var(--text); font-weight: 500; margin-bottom: 6px; }
-.proj-links { display: flex; gap: 20px; margin-top: 16px; font-size: 14px; }
-.job li .proj-links a { color: var(--text); text-decoration: none; }
-.job li .proj-links a span[aria-hidden] { margin-left: 4px; color: var(--muted); }
-.job li .proj-links a:hover, .job li .proj-links a:hover span { color: var(--accent-text); }
 .proj-note { color: var(--muted); font-size: 14px; line-height: 1.6; margin-top: 16px; }
 .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; }
 .skills h3 { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
