@@ -13,12 +13,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=22">
+  <link rel="stylesheet" href="style.css?v=23">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
   <script src="theme.js?v=2" defer></script>
   <script src="spotlight.js" defer></script>
+  <script src="reveal.js" defer></script>
   <script src="i18n-uk.js" defer></script>
   <script src="lang.js" defer></script>
 </head>
@@ -50,66 +51,101 @@
     </nav>
 
     <section id="work" class="section">
-      <h1 class="section-title" data-i18n="t7">Selected work</h1>
-      <div class="work-grid">
-      <a href="case-amabit.html" class="project">
-        <div>
-          <h3 data-i18n="t8">Designed Amabit.io from scratch — a crypto trading terminal with Binance, OKX and Bybit integrations, capital management tools and an analytics dashboard.</h3>
-          <div class="meta" data-i18n="t14"><strong>Amabit.io</strong> · Lead UX/UI Designer</div>
-          <div class="tags"><span class="tag" data-i18n="t19">Crypto</span><span class="tag" data-i18n="t20">Trading</span><span class="tag" data-i18n="t21">Web app</span></div>
+      <h1 class="section-title" data-i18n="t0">Portfolio</h1>
+      <div class="work-group">
+        <div class="work-group-head"><h2>MEDIASAPIENS</h2><span data-i18n="y_2025">2025 – Present</span></div>
+        <div class="work-grid">
+          <a href="case-plandesk.html" class="project">
+            <div>
+              <h3>PlanDesk</h3>
+              <div class="meta" data-i18n="dm_pd">B2B SaaS · Fintech</div>
+              <p class="project-desc" data-i18n="p_pd">All-in-one business app for small companies and venues: invoicing with local tax rules, CRM, warehouse with OCR scanning, restaurant POS, booking and loyalty.</p>
+            </div>
+            <div class="cover" style="background:#1c4ed7">PlanDesk</div>
+          </a>
+          <a href="case-shipstage.html" class="project">
+            <div>
+              <h3>ShipStage</h3>
+              <div class="meta" data-i18n="dm_ss">Logistics · E-commerce</div>
+              <p class="project-desc" data-i18n="p_ss">Back office for a shipping platform: shipments, carrier labels and Shopify integration, on top of an existing Django API.</p>
+            </div>
+            <div class="cover" style="background:#0f766e">ShipStage</div>
+          </a>
+          <a href="case-zyva.html" class="project">
+            <div>
+              <h3>Zyva</h3>
+              <div class="meta" data-i18n="dm_mh">Healthcare</div>
+              <p class="project-desc" data-i18n="p_mh">Health app that connects DNA, blood biomarkers and wearables: lab uploads, supplement scanning and an AI assistant. Native iOS and Android.</p>
+            </div>
+            <div class="cover" style="background:#be123c">Zyva</div>
+          </a>
+          <a href="case-runninghub.html" class="project">
+            <div>
+              <h3>PA:CE Running Hub</h3>
+              <div class="meta" data-i18n="dm_rh">Foodtech</div>
+              <p class="project-desc" data-i18n="p_rh">Mobile app and website for a runners’ club and café in Barcelona: events, payments and QR passes.</p>
+            </div>
+            <div class="cover" style="background:#c2410c">PA:CE Running Hub</div>
+          </a>
         </div>
-        <div class="cover" style="background:#1d4ed8">Amabit.io</div>
-      </a>
-      <a href="case-crm-payment.html" class="project">
-        <div>
-          <h3 data-i18n="t9">Designed a CRM admin panel for a payment system: 8 sections and 80+ screens in 3 months, built on the MUI design system.</h3>
-          <div class="meta" data-i18n="t17"><strong>RVA Fintech</strong> · UX/UI Designer</div>
-          <div class="tags"><span class="tag">B2B</span><span class="tag" data-i18n="t22">Fintech</span><span class="tag" data-i18n="t23">Admin panel</span></div>
-        </div>
-        <div class="cover" style="background:#7c3aed">CRM Payment System</div>
-      </a>
-      <a href="case-metabot.html" class="project">
-        <div>
-          <h3 data-i18n="t10">A visual bot builder that lets traders create automated crypto strategies without code.</h3>
-          <div class="meta" data-i18n="t15"><strong>Amabit · Metabot</strong> · Lead UX/UI Designer</div>
-          <div class="tags"><span class="tag">SaaS</span><span class="tag" data-i18n="t19">Crypto</span><span class="tag">No-code</span></div>
-        </div>
-        <div class="cover" style="background:#0f766e">Visual Bot Builder</div>
-      </a>
-      <a href="case-swallet.html" class="project">
-        <div>
-          <h3 data-i18n="t11">A mobile wallet for crypto and fiat — balances, exchange and payments in one app.</h3>
-          <div class="meta" data-i18n="t17"><strong>RVA Fintech</strong> · UX/UI Designer</div>
-          <div class="tags"><span class="tag" data-i18n="t24">Mobile</span><span class="tag" data-i18n="t22">Fintech</span><span class="tag" data-i18n="t25">Wallet</span></div>
-        </div>
-        <div class="cover" style="background:#b45309">Crypto &amp; Fiat Wallet</div>
-      </a>
-      <a href="https://oleksii-yukhymets.notion.site/Healthcare-Mobile-App-cfb24edb18c844879d34769dc8854fb0" class="project" target="_blank" rel="noopener">
-        <div>
-          <h3 data-i18n="t12">A healthcare mobile app that helps patients track and understand their lab results.</h3>
-          <div class="meta" data-i18n="t16"><strong>Freelance</strong> · UX/UI Designer</div>
-          <div class="tags"><span class="tag" data-i18n="t26">Healthcare</span><span class="tag" data-i18n="t24">Mobile</span></div>
-        </div>
-        <div class="cover" style="background:#0e7490">Healthcare App</div>
-      </a>
-      <a href="https://oleksii-yukhymets.notion.site/AI-powered-blockchain-investment-platform-Taurum-ai-bbd574c22f444e8ab174e35fc61bbab1" class="project" target="_blank" rel="noopener">
-        <div>
-          <h3 data-i18n="t13">Taurum.ai — an AI-powered blockchain investment platform.</h3>
-          <div class="meta" data-i18n="t18"><strong>Taurum.ai</strong> · UX/UI Designer</div>
-          <div class="tags"><span class="tag">AI</span><span class="tag">Web3</span><span class="tag" data-i18n="t27">Investing</span></div>
-        </div>
-        <div class="cover" style="background:#be123c">Taurum.ai</div>
-      </a>
       </div>
-
-      <div class="more">
-        <h3 data-i18n="t28">More projects</h3>
-        <ul>
-        <li><a href="https://oleksii-yukhymets.notion.site/CRM-ERP-for-Telecom-and-Web3-NFT-Game-Apps-2f5359b8a7914106b0f464275d66bff3" target="_blank" rel="noopener">CRM, ERP for Telecom and Web3 NFT Game Apps<span aria-hidden="true">↗</span></a></li>
-        <li><a href="https://oleksii-yukhymets.notion.site/Delivery-App-209c05432b588006901afccab93c4222" target="_blank" rel="noopener">Delivery App<span aria-hidden="true">↗</span></a></li>
-        <li><a href="case-evosim.html">EvoSim — Mobile App, Web3, NFT<span aria-hidden="true">→</span></a></li>
-        <li><a href="https://oleksii-yukhymets.notion.site/Aumify-Landing-Page-for-Cope-Trading-Platform-3f8c773f8d7845c08f5ecca74236a9a8" target="_blank" rel="noopener">Aumify — Landing Page for Copy Trading Platform<span aria-hidden="true">↗</span></a></li>
-        </ul>
+      <div class="work-group">
+        <div class="work-group-head"><h2>Amabit</h2><span data-i18n="y_2023">2023 – 2025</span></div>
+        <div class="work-grid">
+          <a href="case-amabit.html" class="project">
+            <div>
+              <h3>Amabit</h3>
+              <div class="meta" data-i18n="dm_am">Crypto · Fintech</div>
+              <p class="project-desc" data-i18n="p_am">Crypto trading terminal with Binance, OKX and Bybit integrations, PAMM accounts, capital management and an analytics dashboard.</p>
+            </div>
+            <div class="cover" style="background:#4338ca">Amabit</div>
+          </a>
+          <a href="case-metabot.html" class="project">
+            <div>
+              <h3>Metabot</h3>
+              <div class="meta" data-i18n="dm_mb">Crypto · SaaS</div>
+              <p class="project-desc" data-i18n="p_mb">Visual no-code bot builder: traders assemble automated crypto strategies from blocks and test them before going live.</p>
+            </div>
+            <div class="cover" style="background:#7c3aed">Metabot</div>
+          </a>
+        </div>
+      </div>
+      <div class="work-group">
+        <div class="work-group-head"><h2>RVA Fintech Solutions</h2><span data-i18n="y_2022">2022 – 2023</span></div>
+        <div class="work-grid">
+          <a href="case-swallet.html" class="project">
+            <div>
+              <h3>S-Wallet</h3>
+              <div class="meta" data-i18n="dm_sw">Crypto · Fintech</div>
+              <p class="project-desc" data-i18n="p_sw">Multi-currency crypto and fiat wallet for iOS and Android: exchange, send, buy, receive, staking and transaction history.</p>
+            </div>
+            <div class="cover" style="background:#0369a1">S-Wallet</div>
+          </a>
+          <a href="case-crm-payment.html" class="project">
+            <div>
+              <h3>CRM Payment System</h3>
+              <div class="meta" data-i18n="dm_cp">Fintech · B2B</div>
+              <p class="project-desc" data-i18n="p_cp">Admin panel for a Swiss payment system: 8 sections and 80+ screens designed in 3 months on the MUI React design system.</p>
+            </div>
+            <div class="cover" style="background:#6d28d9">CRM Payment System</div>
+          </a>
+          <a href="case-crm-erp.html" class="project">
+            <div>
+              <h3>CRM / ERP for Telecom &amp; Web3</h3>
+              <div class="meta" data-i18n="dm_ce">Telecom · Web3 · B2B</div>
+              <p class="project-desc" data-i18n="p_ce">One admin panel for three platforms — an eSIM app, a crypto game and an NFT marketplace: 300+ screens, analytics and tokenomics management.</p>
+            </div>
+            <div class="cover" style="background:#334155">CRM / ERP for Telecom &amp; Web3</div>
+          </a>
+          <a href="case-evosim.html" class="project">
+            <div>
+              <h3>EvoSim</h3>
+              <div class="meta" data-i18n="dm_ev">Web3 · Telecom · GameFi</div>
+              <p class="project-desc" data-i18n="p_ev">Gamified mobile app where users earn tokens and NFTs for using mobile data — part of the EvoSim Universe with an eSIM app and an NFT marketplace.</p>
+            </div>
+            <div class="cover" style="background:#15803d">EvoSim</div>
+          </a>
+        </div>
       </div>
     </section>
 
