@@ -117,7 +117,7 @@ img { max-width: 100%; display: block; }
 .work-grid .project h3 { font-size: 17px; line-height: 1.45; margin-bottom: 14px; }
 
 /* Footer info */
-.info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 80px 0; font-size: 13px; }
+.info { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; padding: 80px 0; font-size: 13px; }
 .info h4 { color: var(--muted); font-weight: 400; margin-bottom: 24px; }
 .info .item { margin-bottom: 16px; }
 .info .item span { display: block; color: var(--muted); }
@@ -244,7 +244,7 @@ img { max-width: 100%; display: block; }
   .cols { grid-template-columns: 1fr; }
   .shot { padding: 24px 24px 0; }
   .next { padding: 24px; }
-  .info { grid-template-columns: 1fr; }
+  .info { grid-template-columns: 1fr 1fr; }
   .cover { font-size: 36px; }
   .cv-head { flex-direction: column; gap: 20px; }
   .more, .ai-grid, .job, .projects, .work-grid { grid-template-columns: 1fr; gap: 16px; }

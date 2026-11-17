@@ -145,5 +145,8 @@ window.I18N_UK = {
   "lg_en_l": "B1 · Intermediate",
   "lg_uk": "Українська",
   "lg_ru": "Російська",
-  "lg_native": "Рідна"
+  "lg_native": "Рідна",
+  "loc_title": "Локація",
+  "loc_city": "Київ, Україна",
+  "loc_tz": "UTC+2 · Віддалено"
 };
