@@ -149,5 +149,6 @@ window.I18N_UK = {
   "loc_title": "Локація",
   "loc_city": "Київ, Україна",
   "loc_tz": "UTC+2 · Віддалено",
-  "j_le_about": "Виріс від junior до middle дизайнера на e-commerce та веб-продуктах Lenovo в Україні."
+  "j_le_about": "Виріс від junior до middle дизайнера на e-commerce та веб-продуктах Lenovo в Україні.",
+  "l_back": "Назад"
 };

@@ -57,3 +57,15 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { open(false); btn.focus(); } });
   });
 })();
+
+// "Back" on case pages: return to the previous page of this site if there is one.
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('.back-link');
+  if (!a) return;
+  try {
+    if (document.referrer && new URL(document.referrer).origin === location.origin && history.length > 1) {
+      e.preventDefault();
+      history.back();
+    }
+  } catch (err) {}
+});

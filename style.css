@@ -142,6 +142,8 @@ img { max-width: 100%; display: block; }
 .thanks-msg span { background: var(--surface); padding: 14px 20px; border-radius: 12px; font-size: 14px; }
 
 /* Case study */
+.back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; padding: 8px 0; transition: color .2s; }
+.back-link:hover { color: var(--text); }
 .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
 .tab { font-size: 13px; color: var(--muted); padding: 10px 14px; border-bottom: 2px solid transparent; }
 .tab:hover { color: var(--text); }
