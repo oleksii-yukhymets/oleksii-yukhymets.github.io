@@ -117,7 +117,7 @@ img { max-width: 100%; display: block; }
 .work-grid .project h3 { font-size: 17px; line-height: 1.45; margin-bottom: 14px; }
 
 /* Footer info */
-.info { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; padding: 80px 0; font-size: 13px; }
+.info { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; padding: 64px 0 80px; border-top: 1px solid var(--surface); font-size: 13px; }
 .info h4 { color: var(--muted); font-weight: 400; margin-bottom: 24px; }
 .info .item { margin-bottom: 16px; }
 .info .item span { display: block; color: var(--muted); }
