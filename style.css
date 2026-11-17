@@ -121,7 +121,7 @@ img { max-width: 100%; display: block; }
 .project-desc { color: var(--muted); font-size: 15px; line-height: 1.55; margin-top: 12px; }
 .work-group { padding-top: 40px; border-top: 1px solid var(--surface); margin-bottom: 40px; }
 .work-group-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 32px; }
-.work-group-head h2 { font-size: 22px; font-weight: 500; }
+.work-year { font-size: 15px; font-weight: 500; color: var(--muted); margin-bottom: 32px; }
 .work-group-head span { color: var(--muted); font-size: 15px; }
 
 /* Footer info */
