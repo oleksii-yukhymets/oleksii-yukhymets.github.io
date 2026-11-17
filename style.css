@@ -29,7 +29,8 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+body { overflow-x: clip; }
 
 body {
   transition: background-color .3s ease, color .3s ease;
@@ -47,7 +48,12 @@ img { max-width: 100%; display: block; }
 .container { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
 
 /* Nav */
-.nav { display: flex; justify-content: space-between; align-items: center; padding: 32px 0; font-size: 14px; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 32px 0; font-size: 14px; position: sticky; top: 0; }
+/* Sticky header backdrop: full-width, bg 90% -> 0% top to bottom, blur fades with it.
+   Kept in the root stacking context so .theme-toggle can still sit above the theme curtain. */
+.nav::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); z-index: 10; pointer-events: none; background: color-mix(in srgb, var(--bg) 90%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); -webkit-mask-image: linear-gradient(to bottom, #000, transparent); mask-image: linear-gradient(to bottom, #000, transparent); }
+.nav > *, .nav .right > * { position: relative; z-index: 11; }
+.nav .theme-toggle { z-index: 9999; } /* stays above .theme-curtain */
 .nav .links { display: flex; gap: 24px; }
 .nav .logo { color: var(--text); font-size: 24px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
 .nav .logo:hover { opacity: .8; }
@@ -115,6 +121,7 @@ img { max-width: 100%; display: block; }
 .info h4 { color: var(--muted); font-weight: 400; margin-bottom: 24px; }
 .info .item { margin-bottom: 16px; }
 .info .item span { display: block; color: var(--muted); }
+.info .item span:first-child { color: var(--text); }
 .thanks { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 40px 0 60px; }
 .socials { display: flex; gap: 12px; }
 .socials a { display: block; line-height: 0; }
@@ -256,3 +263,12 @@ img { max-width: 100%; display: block; }
 @media (max-width: 480px) {
   .hero h1 .accent { white-space: normal; }
 }
+
+/* Cursor spotlight (dark theme only) — see spotlight.js */
+.cursor-spotlight {
+  position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+  background: radial-gradient(circle var(--spot-r, 200px) at var(--spot-x, -999px) var(--spot-y, -999px), var(--spot-c, rgba(255,255,255,.15)), transparent);
+  opacity: 0; transition: opacity .3s;
+}
+.cursor-spotlight.is-active { opacity: 1; }
+[data-theme="light"] .cursor-spotlight { display: none; }

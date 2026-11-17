@@ -11,160 +11,114 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  @page { size: A4; margin: 14mm 16mm 14mm; }
-  :root { --text: #111214; --muted: #5f636b; --line: #e3e4e7; --accent: #1c4ed7; }
+  @page { size: A4; margin: 10mm 13mm; }
+  :root { --text: #111214; --muted: #5f636b; --accent: #1c4ed7; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body {
     font-family: "Google Sans Flex", "Helvetica Neue", Arial, sans-serif;
-    font-size: 9.6pt; line-height: 1.42; color: var(--text);
+    font-size: 8.8pt; line-height: 1.38; color: var(--text);
     -webkit-font-smoothing: antialiased;
   }
   a { color: inherit; text-decoration: none; }
-  .accent { color: var(--accent); }
 
-  /* Header */
-  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px;
-           padding-bottom: 12px; border-bottom: 1.5px solid var(--text); }
-  h1 { font-size: 24pt; font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; }
-  .title { margin-top: 5px; font-size: 11.5pt; font-weight: 500; }
-  .contacts { text-align: right; font-size: 9pt; line-height: 1.55; color: var(--muted); white-space: nowrap; }
+  h1 { font-size: 16pt; font-weight: 600; letter-spacing: 0.02em; line-height: 1.1; }
+  .title { margin-top: 2px; font-size: 9pt; font-weight: 600; letter-spacing: 0.06em; color: var(--accent); }
+  .contacts { margin-top: 3px; color: var(--muted); }
   .contacts a { color: var(--text); }
 
-  .summary { margin-top: 12px; font-size: 10pt; line-height: 1.5; }
+  .summary { margin-top: 8px; }
+  .skills { margin-top: 6px; color: var(--muted); }
 
-  /* Sections */
-  section { margin-top: 16px; }
-  h2 { font-size: 8.5pt; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
-       color: var(--accent); padding-bottom: 5px; border-bottom: 1px solid var(--line); margin-bottom: 9px; }
+  h2 { margin-top: 11px; margin-bottom: 6px; font-size: 9pt; font-weight: 600; letter-spacing: 0.08em;
+       padding-bottom: 4px; border-bottom: 1px solid #d9dadd; }
 
-  .skills { display: grid; grid-template-columns: 118px 1fr; row-gap: 3px; column-gap: 12px; }
-  .skills dt { font-weight: 500; }
-  .skills dd { color: var(--text); }
-
-  /* Jobs */
-  .job { margin-bottom: 13px; break-inside: avoid-page; }
-  .job:last-child { margin-bottom: 0; }
-  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
-  h3 { font-size: 11pt; font-weight: 600; }
-  h3 .role { font-weight: 500; }
-  .dates { font-size: 9pt; color: var(--muted); white-space: nowrap; }
-  .company-desc { color: var(--muted); font-size: 9pt; margin-top: 1px; }
-  ul { margin-top: 5px; padding-left: 13px; }
-  li { margin-bottom: 2.5px; }
-  li::marker { color: var(--muted); }
-
-  .projects { margin-top: 6px; padding: 0; list-style: none; }
-  .projects li { margin-bottom: 3px; }
-  .projects b { font-weight: 600; }
-  .projects .dom { color: var(--muted); }
-  .label { margin-top: 6px; font-size: 8.5pt; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
-
-  .langs { display: flex; gap: 28px; }
+  .job { margin-bottom: 8px; }
+  .company { font-size: 9pt; font-weight: 600; letter-spacing: 0.04em; }
+  .role { margin-top: 1px; font-weight: 600; letter-spacing: 0.03em; font-size: 8pt; color: var(--muted); }
+  .role .d { font-weight: 400; letter-spacing: 0; }
+  ul { margin-top: 3px; padding-left: 14px; list-style: none; }
+  li { position: relative; margin-bottom: 1.5px; }
+  li::before { content: "●"; position: absolute; left: -13px; top: 0.05em; font-size: 6pt; color: var(--text); }
+  b { font-weight: 600; }
 </style>
 </head>
 <body>
 
-<header>
-  <div>
-    <h1>Oleksii Yukhymets</h1>
-    <div class="title">Senior UX/UI Designer <span class="accent">&amp;</span> Design Engineer (AI)</div>
-  </div>
-  <div class="contacts">
-    <div><a href="mailto:alexey.yukhimets@gmail.com">alexey.yukhimets@gmail.com</a></div>
-    <div><a href="https://www.linkedin.com/in/alexey-yukhimets/">linkedin.com/in/alexey-yukhimets</a></div>
-    <div><a href="https://t.me/lex_mets">t.me/lex_mets</a></div>
-  </div>
-</header>
+<h1>OLEKSII YUKHYMETS</h1>
+<div class="title">SENIOR UX/UI DESIGNER &amp; DESIGN ENGINEER (AI)</div>
+<div class="contacts">Kyiv, Ukraine · <a href="mailto:alexey.yukhimets@gmail.com">alexey.yukhimets@gmail.com</a> · <a href="https://www.linkedin.com/in/alexey-yukhimets/">www.linkedin.com/in/alexey-yukhimets</a></div>
 
 <p class="summary">
-  Product designer with 8+ years in UX/UI — building complex B2B SaaS platforms, design systems and data-heavy
-  interfaces for fintech, crypto, healthcare and e-commerce. Owns products end to end, from discovery and
-  information architecture to the design system and release. Now also ships designs in production code
-  with AI tools (Claude Code, Devin, Cursor), working in Git alongside the engineering team.
+  Senior UX/UI Designer with 8+ years in fintech, crypto and enterprise B2B SaaS. I’ve designed a crypto trading
+  platform from scratch, CRM/ERP admin panels with 300+ screens for payment systems and Web3 products, and
+  multi-currency wallets for iOS and Android — covering complex, data-heavy workflows like trading terminals, capital
+  management, payments, analytics dashboards and approval flows. I build and maintain design systems in Figma and use
+  AI-assisted workflows (Figma MCP, Claude Code, Cursor, Devin) to speed up research and prototyping, and to ship
+  designs as production-ready front-end alongside the dev team.
 </p>
 
-<section>
-  <h2>Skills</h2>
-  <dl class="skills">
-    <dt>Product &amp; UX</dt>
-    <dd>UX research, discovery, information architecture, user flows, wireframes, prototyping, usability, design QA</dd>
-    <dt>UI &amp; systems</dt>
-    <dd>Design systems (tokens, components, patterns), data-heavy UI: dashboards, tables, charts, admin panels; web, iOS, Android</dd>
-    <dt>Design tools</dt>
-    <dd>Figma, MUI design system, Google Analytics, Microsoft Clarity, Hotjar</dd>
-    <dt>Code &amp; AI</dt>
-    <dd>Claude Code, Devin, Cursor, Xcode · Next.js, React, TypeScript, Tailwind, shadcn/ui, React Native · Git, code review, CI/CD</dd>
-  </dl>
-</section>
+<p class="skills">
+  Figma · Figma MCP · UX · UI · UX Research · Design Systems · Information Architecture · User Flows · Prototyping ·
+  Complex Interaction Design · Data-Heavy Dashboards · Mobile (iOS / Android) · End-to-End Design Processes ·
+  Cross-Functional Collaboration · AI-Assisted Design &amp; Vibe Coding · Claude Code · Cursor · Windsurf · Zed · Devin ·
+  Xcode · Git · CI/CD · Next.js · React · TypeScript · Tailwind · shadcn/ui · React Native
+</p>
 
-<section>
-  <h2>Experience</h2>
+<h2>PROFESSIONAL EXPERIENCE</h2>
 
-  <div class="job">
-    <div class="job-head">
-      <h3>MEDIASAPIENS <span class="role">· Senior UX/UI Designer &amp; Design Engineer</span></h3>
-      <span class="dates">Jul 2025 – Present</span>
-    </div>
-    <p class="company-desc">German digital product agency — healthcare, finance and other industries.</p>
-    <ul>
-      <li>Design products directly in code: Figma for exploration, then AI-assisted development to turn designs into working interfaces.</li>
-      <li>Designed and built web apps and analytics dashboards end to end — from UX flows to production-ready front-end.</li>
-      <li>Moved the design process into code: interactive, data-driven prototypes instead of static mockups, shortening the path from idea to release.</li>
-      <li>Work closely with developers on front-end implementation, keeping UI consistent through reusable components; daily Git workflow with branches, merge requests, code review and CI/CD.</li>
-    </ul>
-    <div class="label">Key projects</div>
-    <ul class="projects">
-      <li><b>PlanDesk</b> <span class="dom">· B2B SaaS, fintech</span> — all-in-one business app for small companies: invoicing with local tax rules, CRM, warehouse with OCR scanning, restaurant POS, booking, loyalty. <span class="dom">Next.js, tRPC, Prisma, PostgreSQL</span></li>
-      <li><b>ShipStage</b> <span class="dom">· logistics, e-commerce</span> — back office for a shipping platform: shipments, carrier labels, Shopify integration on top of a Django API.</li>
-      <li><b>Zyva</b> <span class="dom">· healthcare</span> — native iOS/Android app connecting DNA, blood biomarkers and wearables, with lab uploads, supplement scanning and an AI assistant.</li>
-      <li><b>PA:CE Running Hub</b> <span class="dom">· foodtech</span> — mobile app and website for a Barcelona runners’ club and café: events, payments, QR passes.</li>
-      <li>Multilingual marketing sites for these products (Next.js, next-intl, up to 11 locales).</li>
-    </ul>
-  </div>
+<div class="job">
+  <div class="company">MEDIASAPIENS</div>
+  <div class="role">SENIOR UX/UI DESIGNER &amp; DESIGN ENGINEER <span class="d">(07/2025 – 11/2026)</span></div>
+  <ul>
+    <li>Design products directly in code: Figma for exploration, then AI-assisted development (Claude Code, Devin, Cursor) to turn designs into working interfaces.</li>
+    <li>Designed and built web apps and analytics dashboards end to end — from UX flows to production-ready front-end.</li>
+    <li>Moved the design process into code: interactive, data-driven prototypes instead of static mockups, shortening the path from idea to release.</li>
+    <li>Key projects: <b>PlanDesk</b> (B2B SaaS for small businesses: invoicing, CRM, warehouse with OCR, POS, booking), <b>ShipStage</b> (shipping back office with Shopify integration), <b>Zyva</b> (healthcare app for iOS/Android with an AI assistant), <b>PA:CE Running Hub</b> (mobile app and website for a runners’ club).</li>
+    <li>Multilingual marketing sites for these products (Next.js, next-intl, up to 11 locales). Everyday work in Git — branches, merge requests, code review and CI/CD.</li>
+  </ul>
+</div>
 
-  <div class="job">
-    <div class="job-head">
-      <h3>Amabit <span class="role">· Strong Middle / Senior UX/UI Designer</span></h3>
-      <span class="dates">Sep 2023 – Feb 2025</span>
-    </div>
-    <p class="company-desc">Crypto trading and asset management platform — Binance, OKX and Bybit, PAMM accounts, trading bots, capital analytics.</p>
-    <ul>
-      <li>Led the design of the platform from scratch and owned it end to end — from research and product structure to the design system and release.</li>
-      <li>Ran discovery: analysis of crypto exchanges and trading terminals, interviews with traders, user flows and information architecture.</li>
-      <li>Built the Figma design system: tokens, components and patterns for data-heavy trading screens — charts, tables, forms and states.</li>
-      <li>Designed the trading terminal, capital management and analytics, the <b>Metabot</b> no-code visual bot builder, an exchange beta and a Telegram mini app for a crypto game.</li>
-      <li>Validated ideas with wireframes and clickable prototypes; worked with founders, PMs and engineers from requirements to handoff and design QA.</li>
-    </ul>
-  </div>
+<div class="job">
+  <div class="company">AMABIT</div>
+  <div class="role">STRONG MIDDLE / SENIOR UX/UI DESIGNER <span class="d">(09/2023 – 02/2025)</span></div>
+  <ul>
+    <li>Led the design of a crypto trading and asset management platform from scratch and owned it end to end — from research and product structure to the design system and release.</li>
+    <li>Ran discovery: analysis of crypto exchanges and trading terminals, interviews with traders, user flows and information architecture.</li>
+    <li>Built the Figma design system: tokens, components and patterns for data-heavy trading screens — charts, tables, forms and states.</li>
+    <li>Designed the trading terminal (Binance, OKX, Bybit), PAMM accounts, capital management and analytics, the Metabot no-code bot builder, an exchange beta and a Telegram mini app.</li>
+    <li>Validated ideas with wireframes and clickable prototypes; worked with founders, PMs and engineers from requirements to handoff and design QA.</li>
+  </ul>
+</div>
 
-  <div class="job">
-    <div class="job-head">
-      <h3>RVA Fintech Solutions <span class="role">· Middle / Strong Middle UX/UI Designer</span></h3>
-      <span class="dates">May 2022 – Sep 2023</span>
-    </div>
-    <p class="company-desc">Kyiv-based product company, 100+ delivered projects — payment systems, crypto wallets, blockchain, web and mobile.</p>
-    <ul>
-      <li>Designed B2C interfaces for a payment system, the S-Wallet crypto wallet (iOS/Android), a telecom app and an NFT game.</li>
-      <li>Designed a CRM for a Swiss payment system — 8 sections and 80+ screens in 3 months.</li>
-      <li>Designed one CRM/ERP for three platforms (eSIM app, crypto game, NFT marketplace): 300+ screens, analytics and tokenomics management.</li>
-      <li>Introduced the MUI React design system to the team for building admin panels; improved existing crypto-wallet admin dashboards.</li>
-    </ul>
-  </div>
+<div class="job">
+  <div class="company">RVA FINTECH SOLUTIONS</div>
+  <div class="role">MIDDLE / STRONG MIDDLE UX/UI DESIGNER <span class="d">(05/2022 – 09/2023)</span></div>
+  <ul>
+    <li>Designed B2C interfaces for a payment system, the S-Wallet multi-currency crypto wallet (iOS/Android), a telecom app and an NFT game.</li>
+    <li>Designed an admin panel for a Swiss payment system — 8 sections and 80+ screens in 3 months.</li>
+    <li>Designed one CRM/ERP for three platforms (eSIM app, crypto game, NFT marketplace): 300+ screens, analytics and tokenomics management.</li>
+    <li>Introduced the MUI React design system to the team for building admin panels.</li>
+  </ul>
+</div>
 
-  <div class="job">
-    <div class="job-head">
-      <h3>Lenovo Ukraine <span class="role">· Junior / Middle UX/UI Designer</span></h3>
-      <span class="dates">May 2018 – Feb 2022</span>
-    </div>
-    <p class="company-desc">Official Lenovo online store and web portals in Ukraine.</p>
-    <ul>
-      <li>Designed and launched the official online store shop.lenovo.ua, the lenovo.ua portal and the service portal service.lenovo.ua.</li>
-      <li>Improved the experience using Google Analytics, Microsoft Clarity, Hotjar and customer feedback.</li>
-      <li>Created marketing landing pages for new products, establishing a consistent visual style across the portal.</li>
-    </ul>
-  </div>
-</section>
+<div class="job">
+  <div class="company">LENOVO UKRAINE</div>
+  <div class="role">JUNIOR / MIDDLE UX/UI DESIGNER <span class="d">(05/2018 – 02/2022)</span></div>
+  <ul>
+    <li>Designed and launched the official online store shop.lenovo.ua, the lenovo.ua portal and the service portal service.lenovo.ua.</li>
+    <li>Improved the experience based on Google Analytics, Microsoft Clarity, Hotjar and customer feedback.</li>
+    <li>Created marketing landing pages for new products, establishing a consistent visual style across the portal.</li>
+  </ul>
+</div>
+
+<h2>EDUCATION</h2>
+<div class="job">
+  <div class="company">Google UX Design Professional Certificate</div>
+  <div class="role"><span class="d">Google · Coursera (05/2025) · <a href="https://www.coursera.org/verify/professional-cert/Y6170E032QA8">coursera.org/verify/professional-cert/Y6170E032QA8</a></span></div>
+  <ul>
+    <li>6-course program: UX design process (empathize, define, ideate), wireframes and low-fidelity prototypes, UX research and usability testing, high-fidelity designs and prototypes in Figma, responsive web UI, end-to-end portfolio projects.</li>
+  </ul>
+</div>
 
 </body>
 </html>
