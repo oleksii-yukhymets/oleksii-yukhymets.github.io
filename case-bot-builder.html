@@ -10,13 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=27">
+  <link rel="stylesheet" href="style.css?v=28">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
   <script src="theme.js?v=2" defer></script>
   <script src="spotlight.js" defer></script>
   <script src="reveal.js" defer></script>
+  <script src="lightbox.js" defer></script>
   <script src="i18n-uk.js" defer></script>
   <script src="i18n-uk-cases.js" defer></script>
   <script src="lang.js" defer></script>
@@ -24,7 +25,7 @@
 <body data-page="case">
   <div class="container">
     <nav class="nav">
-      <a href="index.html" class="logo" aria-label="Oleksii Yukhymets — Home">O<span class="accent">_</span>Y</a>
+      <a href="index.html" class="logo" aria-label="Oleksii Yukhymets — Home" data-tip="Oleksii Yukhymets">O<span class="accent">_</span>Y</a>
       <div class="right">
         <div class="links">
           <a href="index.html#experience" data-i18n="t1">Experience</a>
@@ -50,7 +51,7 @@
     <a href="portfolio.html" class="back-link"><span aria-hidden="true">←</span> <span data-i18n="l_back">Back</span></a>
 
     <header class="cs-hero">
-      <h1 data-i18n="bb_11">Designed a visual no-code bot builder <span class="dim">(web, mobile)</span> where traders assemble automated crypto strategies from blocks and run them in the cloud.</h1>
+      <h1 data-i18n="bb_11">Designed a visual no-code bot builder <span class="dim">(web, mobile)</span> where traders assemble automated crypto strategies from blocks and run them via API on their own accounts across different exchanges.</h1>
     </header>
 
     <figure class="cs-img">
@@ -59,7 +60,7 @@
     <section class="cs-row">
       <h2 data-i18n="bb_12">Overview</h2>
       <div>
-        <p class="lead" data-i18n="bb_13">A visual bot builder for crypto trading. No coding needed: users drag and drop components to build trading logic, connect exchanges and run bots in the cloud.</p>
+        <p class="lead" data-i18n="bb_13">A visual bot builder for crypto trading. No coding needed: users drag and drop components to build trading logic and run bots via API on their own accounts across different exchanges.</p>
         <dl class="cs-facts">
           <div><dt data-i18n="bb_14">Role</dt><dd data-i18n="bb_15">UX/UI &amp; Product Designer</dd></div>
           <div><dt data-i18n="bb_16">Team</dt><dd data-i18n="bb_17">CTO, development team</dd></div>
@@ -71,14 +72,14 @@
     <section class="cs-row">
       <h2 data-i18n="bb_22">Approach</h2>
       <div>
-        <p class="lead" data-i18n="bb_23">I had no experience with trading or investment apps before, so I started by learning the domain — and that knowledge shaped the product.</p>
-        <ol class="cs-list"><li data-i18n="bb_24">Brainstormed the product together with the CTO and the development team.</li><li data-i18n="bb_25">Studied the market and competitors — trading tools as well as no-code drag-and-drop platforms.</li><li data-i18n="bb_26">Moved from wireframes and prototypes to the final UI, with dark and light themes.</li><li data-i18n="bb_27">A special task: a mobile version of the visual bot builder.</li></ol>
+        <p class="lead" data-i18n="bb_23">I had no experience with trading or investment apps before, so I started by learning the domain, and that knowledge shaped the product.</p>
+        <ol class="cs-list"><li data-i18n="bb_24">Brainstormed the product together with the CTO and the development team.</li><li data-i18n="bb_25">Studied the market and competitors: trading tools as well as no-code drag-and-drop platforms.</li><li data-i18n="bb_26">Moved from wireframes and prototypes to the final UI, with dark and light themes.</li><li data-i18n="bb_27">A special task: a mobile version of the visual bot builder.</li></ol>
       </div>
     </section>
     <h2 class="cs-section" data-i18n="bb_28">Screens</h2>
     <figure class="cs-img">
       <img src="images/cases/bot-builder/02.jpg" alt="Dashboard in dark and light themes" width="1800" height="2364" loading="lazy">
-      <figcaption><strong data-i18n="bb_1">Dashboard</strong><span data-i18n="bb_2">Balance, bots, P&amp;L and open positions — in dark and light themes.</span></figcaption>
+      <figcaption><strong data-i18n="bb_1">Dashboard</strong><span data-i18n="bb_2">Balance, bots, P&amp;L and open positions in dark and light themes.</span></figcaption>
     </figure>
     <figure class="cs-img">
       <img src="images/cases/bot-builder/03.jpg" alt="My bots" width="1800" height="1084" loading="lazy">

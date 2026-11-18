@@ -10,13 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=27">
+  <link rel="stylesheet" href="style.css?v=28">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
   <script src="theme.js?v=2" defer></script>
   <script src="spotlight.js" defer></script>
   <script src="reveal.js" defer></script>
+  <script src="lightbox.js" defer></script>
   <script src="i18n-uk.js" defer></script>
   <script src="i18n-uk-cases.js" defer></script>
   <script src="lang.js" defer></script>
@@ -24,7 +25,7 @@
 <body data-page="case">
   <div class="container">
     <nav class="nav">
-      <a href="index.html" class="logo" aria-label="Oleksii Yukhymets — Home">O<span class="accent">_</span>Y</a>
+      <a href="index.html" class="logo" aria-label="Oleksii Yukhymets — Home" data-tip="Oleksii Yukhymets">O<span class="accent">_</span>Y</a>
       <div class="right">
         <div class="links">
           <a href="index.html#experience" data-i18n="t1">Experience</a>
@@ -50,7 +51,7 @@
     <a href="portfolio.html" class="back-link"><span aria-hidden="true">←</span> <span data-i18n="l_back">Back</span></a>
 
     <header class="cs-hero">
-      <h1 data-i18n="cp_15">Designed a CRM admin panel for a Swiss payment system <span class="dim">(web)</span> — 8 sections and 80+ screens in 3 months on the MUI React design system.</h1>
+      <h1 data-i18n="cp_15">Designed a CRM admin panel for a Swiss payment system <span class="dim">(web)</span>: 8 sections and 80+ screens in 3 months on the MUI React design system.</h1>
     </header>
 
     <figure class="cs-img">
@@ -71,7 +72,7 @@
     <section class="cs-row">
       <h2 data-i18n="cp_26">Challenges</h2>
       <div>
-        <ol class="cs-list"><li data-i18n="cp_27">Create the company’s own admin panel.</li><li data-i18n="cp_28">Work with a large volume of data and complex business processes.</li><li data-i18n="cp_29">Hit a tight deadline — we needed a way to design and develop fast.</li></ol>
+        <ol class="cs-list"><li data-i18n="cp_27">Create the company’s own admin panel.</li><li data-i18n="cp_28">Work with a large volume of data and complex business processes.</li><li data-i18n="cp_29">Hit a tight deadline, so we needed a way to design and develop fast.</li></ol>
       </div>
     </section>
     <section class="cs-row">
@@ -83,13 +84,13 @@
     <section class="cs-row">
       <h2 data-i18n="cp_34">Results</h2>
       <div>
-        <p class="lead" data-i18n="cp_35">The interface was designed in about 3 months: <strong>8 main sections</strong> and <strong>80+ screens</strong>.</p>
+        <p class="lead" data-i18n="cp_35">I designed the interface in about 3 months: <strong>8 main sections</strong> and <strong>80+ screens</strong>.</p>
       </div>
     </section>
     <h2 class="cs-section" data-i18n="cp_36">Screens</h2>
     <figure class="cs-img">
       <img src="images/cases/crm-payment/02.jpg" alt="Dashboard — exchange" width="1080" height="993" loading="lazy">
-      <figcaption><strong data-i18n="cp_1">Dashboard / Exchange</strong><span data-i18n="cp_2">Currency volume in the system. At the MVP stage — 3 currencies and 6 currency pairs.</span></figcaption>
+      <figcaption><strong data-i18n="cp_1">Dashboard / Exchange</strong><span data-i18n="cp_2">Currency volume in the system. At the MVP stage there were 3 currencies and 6 currency pairs.</span></figcaption>
     </figure>
     <figure class="cs-img">
       <img src="images/cases/crm-payment/03.jpg" alt="Dashboard — more data" width="1080" height="871" loading="lazy">

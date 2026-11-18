@@ -10,21 +10,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=27">
+  <link rel="stylesheet" href="style.css?v=28">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
   <script src="theme.js?v=2" defer></script>
   <script src="spotlight.js" defer></script>
   <script src="reveal.js" defer></script>
+  <script src="lightbox.js" defer></script>
   <script src="i18n-uk.js" defer></script>
   <script src="i18n-uk-cases.js" defer></script>
   <script src="lang.js" defer></script>
+  <style>
+    .shot-frame.auto { aspect-ratio: auto; display: block; overflow: hidden; }
+    .shot-frame.auto > img { width: 100%; height: auto; display: block; border-radius: 0; }
+    .shot-accent { background: linear-gradient(160deg, #0a2925 0%, #0e4a41 100%); }
+    .phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3cqw; padding-bottom: 48px; container-type: inline-size; }
+    .phone { position: relative; padding: 0.9cqw; background: #0b0b0d; border-radius: 5.2cqw;
+             box-shadow: 0 0 0 1.5px #3b3b40, 0 0 0 3px #111114, 0 24px 60px rgba(0,0,0,.45); }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 4.3cqw; }
+    .phone::before { content: ""; position: absolute; z-index: 1; left: 50%; top: calc(0.9cqw + 1.15%); transform: translateX(-50%);
+                     width: 31%; aspect-ratio: 3.3 / 1; border-radius: 999px; background: #000; pointer-events: none; }
+    @media (max-width: 640px) { .phones { padding-bottom: 24px; } }
+  </style>
 </head>
 <body data-page="case">
   <div class="container">
     <nav class="nav">
-      <a href="index.html" class="logo" aria-label="Oleksii Yukhymets — Home">O<span class="accent">_</span>Y</a>
+      <a href="index.html" class="logo" aria-label="Oleksii Yukhymets — Home" data-tip="Oleksii Yukhymets">O<span class="accent">_</span>Y</a>
       <div class="right">
         <div class="links">
           <a href="index.html#experience" data-i18n="t1">Experience</a>
@@ -50,83 +63,70 @@
     <a href="portfolio.html" class="back-link"><span aria-hidden="true">←</span> <span data-i18n="l_back">Back</span></a>
 
     <header class="cs-hero">
-      <h1>Designed and built <a href="https://zyva.health/en/" class="u" target="_blank" rel="noopener">Zyva</a> — a health app <span class="dim">(iOS, Android)</span> that connects DNA, blood biomarkers and wearables.</h1>
+      <h1 data-i18n="zy_1">Designed <a href="https://zyva.health/en/" class="u" target="_blank" rel="noopener">Zyva</a>, a health app <span class="dim">(iOS, Android)</span>, from visual concepts in Figma to the UI of the native apps.</h1>
     </header>
 
-    <!-- Replace .shot inner text with <img src="images/..." alt="..."> -->
     <figure class="shot shot-accent">
-      <figcaption>
-        <strong>[Product 2.0 — Shipped 2025]</strong>
-        <span>[One-line description of what this screen shows]</span>
-      </figcaption>
-      <div class="shot-frame">Main screenshot</div>
+      <figcaption><strong data-i18n="zy_2">Zyva: the home screen</strong></figcaption>
+      <div class="shot-frame auto"><img src="images/cases/zyva/cover.jpg" alt="Zyva home screen on an iPhone in a hand" width="1568" height="1027"></div>
     </figure>
 
     <section class="cs-row">
-      <h2>[I was part of the core team that shipped the next generation of the product.]</h2>
+      <h2 data-i18n="zy_3">Overview</h2>
       <div>
-        <p class="lead">[In 2025, the company re-focused its product strategy toward a new audience — describe the context and why it mattered.]</p>
-        <div class="cols">
-          <div>
-            <h3>Product contributions</h3>
-            <ul><li>Information architecture</li><li>Search</li><li>Design system</li><li>Notifications</li></ul>
-          </div>
-          <div>
-            <h3 data-i18n="t62">Research</h3>
-            <ul><li>User interviews</li><li>Usability testing</li></ul>
-          </div>
-          <div>
-            <h3>Titles held</h3>
-            <ul><li>Product Designer</li><li>UX/UI Designer</li></ul>
-          </div>
-        </div>
+        <p class="lead" data-i18n="zy_4">Zyva brings blood tests, DNA and wearables into one app: upload a lab report, scan a supplement and ask an AI assistant about the results. I designed the app and built its UI for iOS and Android together with the backend developers.</p>
+        <dl class="cs-facts">
+          <div><dt data-i18n="zy_5">Role</dt><dd data-i18n="zy_6">Product Designer / Design Engineer</dd></div>
+          <div><dt data-i18n="zy_7">Team</dt><dd data-i18n="zy_8">Founder, backend developers</dd></div>
+          <div><dt data-i18n="zy_9">Timeline</dt><dd data-i18n="zy_10">2025–2026</dd></div>
+          <div><dt data-i18n="zy_11">Platform</dt><dd data-i18n="zy_12">iOS · Android</dd></div>
+        </dl>
       </div>
     </section>
 
+    <section class="cs-row">
+      <h2 data-i18n="zy_13">Concept</h2>
+      <div>
+        <p class="lead" data-i18n="zy_14">The product grew out of the founder’s business requirements, and they kept changing. In Figma I explored several visual directions, themes and ways to show lab data, then designed the key screens.</p>
+      </div>
+    </section>
+
+    <!-- Figma variations: replace the frame text with <img src="images/cases/zyva/figma-01.jpg" alt="..."> -->
     <figure class="shot">
-      <figcaption>
-        <strong>[Annotated view of the main surface]</strong>
-        <span class="legend">
-          <span><i style="--c:#3b82f6"></i>[Tools &amp; settings]</span>
-          <span><i style="--c:#ef4444"></i>[Reacting]</span>
-          <span><i style="--c:#f59e0b"></i>[Being proactive]</span>
-        </span>
-      </figcaption>
-      <div class="shot-frame">Annotated screenshot</div>
+      <figcaption><strong data-i18n="zy_15">Figma: visual directions</strong></figcaption>
+      <div class="shot-frame">[Figma variations, coming]</div>
     </figure>
 
     <section class="cs-row">
-      <h2>[An information architecture built from first principles.]</h2>
+      <h2 data-i18n="zy_16">Build</h2>
       <div>
-        <p class="lead">[What you re-organized, for whom, and the main idea behind the new structure.]</p>
-        <div class="cols">
-          <div>
-            <h3><i class="dot" style="--c:#ef4444"></i>[Principle one]</h3>
-            <p>[Short explanation of the first design principle or decision.]</p>
-          </div>
-          <div>
-            <h3><i class="dot" style="--c:#f59e0b"></i>[Principle two]</h3>
-            <p>[Short explanation of the second design principle or decision.]</p>
-          </div>
-          <div>
-            <h3><i class="dot" style="--c:#3b82f6"></i>[Principle three]</h3>
-            <p>[Short explanation of the third design principle or decision.]</p>
-          </div>
-        </div>
+        <p class="lead" data-i18n="zy_17">Development started in React Native. Then the CTO moved the project to Kotlin Multiplatform with native UI, and I built the screens for iOS and Android in parallel with AI tools. As in PlanDesk, I set up specs for buttons, type, colours and spacing, so both apps look and behave the same.</p>
       </div>
     </section>
+
+    <figure class="shot shot-accent">
+      <figcaption><strong data-i18n="zy_18">Health, Data and Ask Zyva</strong></figcaption>
+      <div class="phones">
+        <div class="phone"><img src="images/cases/zyva/screen-health.jpg" alt="Health screen: values out of range and to watch" loading="lazy"></div>
+        <div class="phone"><img src="images/cases/zyva/screen-data.jpg" alt="Data screen: biomarkers overview and groups" loading="lazy"></div>
+        <div class="phone"><img src="images/cases/zyva/screen-ask.jpg" alt="Ask Zyva chat answering a question about a lab value" loading="lazy"></div>
+      </div>
+    </figure>
+    <figure class="shot shot-accent">
+      <figcaption><strong data-i18n="zy_21">A biomarker group, a marker trend and supplement scans</strong></figcaption>
+      <div class="phones">
+        <div class="phone"><img src="images/cases/zyva/screen-vitamins.jpg" alt="Vitamins group with three markers" loading="lazy"></div>
+        <div class="phone"><img src="images/cases/zyva/screen-trend.jpg" alt="Vitamin D3 trend chart against the lab range" loading="lazy"></div>
+        <div class="phone"><img src="images/cases/zyva/screen-scans.jpg" alt="Scans screen with saved supplements" loading="lazy"></div>
+      </div>
+    </figure>
 
     <section class="cs-row">
-      <h2>[Learning from our users]</h2>
+      <h2 data-i18n="zy_19">Status</h2>
       <div>
-        <p class="lead">[How you did research — interviews, visits, testing — and what it changed.]</p>
+        <p class="lead" data-i18n="zy_20">The app is in TestFlight and can be installed from <a href="https://zyva.health/en/" class="u" target="_blank" rel="noopener">zyva.health</a>. Development is partly on hold, so the current build may differ from these screens.</p>
       </div>
     </section>
-
-    <figure class="shot">
-      <figcaption><span>[Before — the inherited product]</span></figcaption>
-      <div class="shot-frame">Before / after</div>
-    </figure>
 
     <hr class="divider">
 

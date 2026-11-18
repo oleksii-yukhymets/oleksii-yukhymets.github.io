@@ -19,6 +19,15 @@
     } else {
       document.title = originalTitle;
     }
+    // Logo tooltip always shows the name in English; only the screen-reader label follows the language.
+    document.querySelectorAll('.nav .logo').forEach((a) => {
+      a.dataset.tip = 'Oleksii Yukhymets';
+      a.setAttribute('aria-label', lang === 'uk' ? 'Олексій Юхимець — Головна' : 'Oleksii Yukhymets — Home');
+    });
+    // CV links open the PDF in the current language.
+    document.querySelectorAll('a[href*="Oleksii-Yukhymets-CV"]').forEach((a) => {
+      a.setAttribute('href', lang === 'uk' ? 'Oleksii-Yukhymets-CV-UA.pdf' : 'Oleksii-Yukhymets-CV.pdf');
+    });
     root.lang = lang;
     document.querySelectorAll('.lang-current').forEach((n) => (n.textContent = LANGS[lang]));
     document.querySelectorAll('.lang-menu [data-lang]').forEach((b) => {

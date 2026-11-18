@@ -60,6 +60,9 @@ img { max-width: 100%; display: block; }
 .nav .links { display: flex; gap: 24px; }
 .nav .logo { color: var(--text); font-size: 24px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
 .nav .logo:hover { opacity: .8; }
+.nav .logo { position: relative; }
+.nav .logo::after { content: attr(data-tip); position: absolute; left: 0; top: calc(100% + 10px); white-space: nowrap; font-size: 13px; font-weight: 500; letter-spacing: 0; padding: 6px 10px; border-radius: 8px; background: var(--surface); color: var(--text); box-shadow: 0 0 0 1px var(--frame-border); opacity: 0; transform: translateY(-4px); pointer-events: none; transition: opacity .15s ease, transform .15s ease; z-index: 50; }
+.nav .logo:hover::after, .nav .logo:focus-visible::after { opacity: 1; transform: none; }
 .nav a { color: var(--muted); transition: color .2s; }
 .nav a:hover, .nav a.active { color: var(--text); }
 .nav .right { display: flex; align-items: center; gap: 24px; }
@@ -137,9 +140,9 @@ img { max-width: 100%; display: block; }
 .socials .si-fg { fill: var(--bg); }
 .socials a:hover .si-bg { fill: var(--accent); }
 .socials a:hover .si-fg { fill: #fff; }
-.thanks-msg { display: flex; align-items: center; gap: 12px; }
+.thanks-msg { display: flex; align-items: flex-end; gap: 12px; } /* avatar sits at the bubble's bottom, like a chat */
 .thanks-msg img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
-.thanks-msg span { background: var(--surface); padding: 14px 20px; border-radius: 12px; font-size: 14px; }
+.thanks-msg span { background: var(--surface); padding: 14px 20px; border-radius: 18px 18px 18px 4px; font-size: 14px; } /* sharp bottom-left corner: message "sent" from the avatar */
 
 /* Case study */
 .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; padding: 8px 0; transition: color .2s; }
