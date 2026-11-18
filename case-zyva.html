@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=28">
+  <link rel="stylesheet" href="style.css?v=29">
   <script>
     (() => { try { const t = localStorage.getItem('theme') || 'dark'; document.documentElement.dataset.theme = t; } catch (e) {} })();
   </script>
@@ -25,12 +25,17 @@
     .shot-frame.auto { aspect-ratio: auto; display: block; overflow: hidden; }
     .shot-frame.auto > img { width: 100%; height: auto; display: block; border-radius: 0; }
     .shot-accent { background: linear-gradient(160deg, #0a2925 0%, #0e4a41 100%); }
+    .shot-cover { background: linear-gradient(160deg, #050c0b 0%, #0b2622 100%); }
     .phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3cqw; padding-bottom: 48px; container-type: inline-size; }
-    .phone { position: relative; padding: 0.9cqw; background: #0b0b0d; border-radius: 5.2cqw;
+    .phones.phones-4 { grid-template-columns: repeat(4, 1fr); gap: 2.4cqw; }
+    .phone { position: relative; padding: 0.9cqw; background: #0b0b0d; border-radius: 4.5cqw;
              box-shadow: 0 0 0 1.5px #3b3b40, 0 0 0 3px #111114, 0 24px 60px rgba(0,0,0,.45); }
-    .phone img { width: 100%; height: auto; display: block; border-radius: 4.3cqw; }
+    .phone img { width: 100%; height: auto; display: block; border-radius: 3.6cqw; }
     .phone::before { content: ""; position: absolute; z-index: 1; left: 50%; top: calc(0.9cqw + 1.15%); transform: translateX(-50%);
                      width: 31%; aspect-ratio: 3.3 / 1; border-radius: 999px; background: #000; pointer-events: none; }
+    .phones-4 .phone { padding: 0.55cqw; border-radius: 2.85cqw; }
+    .phones-4 .phone img { border-radius: 2.3cqw; }
+    .phones-4 .phone::before { top: calc(0.55cqw + 1.4%); width: 24%; }
     @media (max-width: 640px) { .phones { padding-bottom: 24px; } }
   </style>
 </head>
@@ -66,7 +71,7 @@
       <h1 data-i18n="zy_1">Designed <a href="https://zyva.health/en/" class="u" target="_blank" rel="noopener">Zyva</a>, a health app <span class="dim">(iOS, Android)</span>, from visual concepts in Figma to the UI of the native apps.</h1>
     </header>
 
-    <figure class="shot shot-accent">
+    <figure class="shot shot-accent shot-cover">
       <figcaption><strong data-i18n="zy_2">Zyva: the home screen</strong></figcaption>
       <div class="shot-frame auto"><img src="images/cases/zyva/cover.jpg" alt="Zyva home screen on an iPhone in a hand" width="1568" height="1027"></div>
     </figure>
@@ -85,24 +90,21 @@
     </section>
 
     <section class="cs-row">
-      <h2 data-i18n="zy_13">Concept</h2>
+      <h2 data-i18n="zy_16">Design and build</h2>
       <div>
-        <p class="lead" data-i18n="zy_14">The product grew out of the founder’s business requirements, and they kept changing. In Figma I explored several visual directions, themes and ways to show lab data, then designed the key screens.</p>
+        <p class="lead" data-i18n="zy_17">I started in Figma with visual directions and the key screens. Development began in React Native, then the CTO moved the project to Kotlin Multiplatform with native UI, and I built the screens for iOS and Android in parallel with AI tools. As in PlanDesk, I set up specs for buttons, type, colours and spacing, so both apps look and behave the same.</p>
       </div>
     </section>
 
-    <!-- Figma variations: replace the frame text with <img src="images/cases/zyva/figma-01.jpg" alt="..."> -->
-    <figure class="shot">
-      <figcaption><strong data-i18n="zy_15">Figma: visual directions</strong></figcaption>
-      <div class="shot-frame">[Figma variations, coming]</div>
+    <figure class="shot shot-accent">
+      <figcaption><strong data-i18n="zy_15">Figma: splash screen with the snake mascot and onboarding</strong></figcaption>
+      <div class="phones phones-4">
+        <div class="phone"><img src="images/cases/zyva/figma-splash.png" alt="Splash screen with the Zyva snake mascot" loading="lazy"></div>
+        <div class="phone"><img src="images/cases/zyva/figma-onb-1.png" alt="Onboarding: one health hub" loading="lazy"></div>
+        <div class="phone"><img src="images/cases/zyva/figma-onb-2.png" alt="Onboarding: scan supplements smarter" loading="lazy"></div>
+        <div class="phone"><img src="images/cases/zyva/figma-onb-3.png" alt="Onboarding: private AI health researcher" loading="lazy"></div>
+      </div>
     </figure>
-
-    <section class="cs-row">
-      <h2 data-i18n="zy_16">Build</h2>
-      <div>
-        <p class="lead" data-i18n="zy_17">Development started in React Native. Then the CTO moved the project to Kotlin Multiplatform with native UI, and I built the screens for iOS and Android in parallel with AI tools. As in PlanDesk, I set up specs for buttons, type, colours and spacing, so both apps look and behave the same.</p>
-      </div>
-    </section>
 
     <figure class="shot shot-accent">
       <figcaption><strong data-i18n="zy_18">Health, Data and Ask Zyva</strong></figcaption>
