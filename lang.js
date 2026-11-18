@@ -25,8 +25,8 @@
       a.setAttribute('aria-label', lang === 'uk' ? 'Олексій Юхимець — Головна' : 'Oleksii Yukhymets — Home');
     });
     // CV links open the PDF in the current language.
-    document.querySelectorAll('a[href*="Oleksii-Yukhymets-CV"]').forEach((a) => {
-      a.setAttribute('href', lang === 'uk' ? 'Oleksii-Yukhymets-CV-UA.pdf' : 'Oleksii-Yukhymets-CV.pdf');
+    document.querySelectorAll('a[data-cv]').forEach((a) => {
+      a.setAttribute('href', lang === 'uk' ? 'CV Олексій Юхимець, продуктовий дизайнер, дизайн-інженер.pdf' : 'CV Oleksii Yukhymets, Product Designer, Design Engineer.pdf');
     });
     root.lang = lang;
     document.querySelectorAll('.lang-current').forEach((n) => (n.textContent = LANGS[lang]));

@@ -1,13 +1,20 @@
 #!/bin/sh
-# Render resume.html -> ../Oleksii-Yukhymets-CV.pdf and resume-uk.html -> ../Oleksii-Yukhymets-CV-UA.pdf with headless Chrome.
+# Render resume.html and resume-uk.html to PDF with headless Chrome.
+# The file name is what people see in the "Save as" dialog, so it carries the full name and title.
+# The old short name is kept as a copy so links shared earlier keep working.
 set -e
 cd "$(dirname "$0")"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-for pair in "resume.html:../Oleksii-Yukhymets-CV.pdf" "resume-uk.html:../Oleksii-Yukhymets-CV-UA.pdf"; do
-  src="${pair%%:*}"; out="${pair#*:}"
+EN="../CV Oleksii Yukhymets, Product Designer, Design Engineer.pdf"
+UK="../CV Олексій Юхимець, продуктовий дизайнер, дизайн-інженер.pdf"
+render() {
   "$CHROME" --headless=new --disable-gpu --no-pdf-header-footer \
     --virtual-time-budget=10000 \
-    --print-to-pdf="$out" \
-    "file://$PWD/$src" 2>/dev/null
-  echo "Built $out"
-done
+    --print-to-pdf="$2" \
+    "file://$PWD/$1" 2>/dev/null
+  echo "Built $2"
+}
+render resume.html "$EN"
+render resume-uk.html "$UK"
+cp "$EN" ../Oleksii-Yukhymets-CV.pdf
+cp "$UK" ../Oleksii-Yukhymets-CV-UA.pdf
