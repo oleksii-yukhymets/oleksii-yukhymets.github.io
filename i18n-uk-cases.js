@@ -304,5 +304,6 @@ window.I18N_UK = Object.assign(window.I18N_UK || {}, {
   "zy_18": "Health, Data і Ask Zyva",
   "zy_19": "Статус",
   "zy_20": "Застосунок у TestFlight, його можна встановити з <a href=\"https://zyva.health/en/\" class=\"u\" target=\"_blank\" rel=\"noopener\">zyva.health</a>. Розробку частково призупинено, тож поточна збірка може відрізнятися від цих екранів.",
+  "cs_stack": "Інструменти та стек",
   "zy_21": "Група біомаркерів, тренд показника та сканування добавок"
 });

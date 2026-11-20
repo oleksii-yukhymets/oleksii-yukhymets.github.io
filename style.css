@@ -265,6 +265,9 @@ img { max-width: 100%; display: block; }
 .cs-facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 32px; margin-top: 32px; font-size: 14px; }
 .cs-facts dt { color: var(--muted); margin-bottom: 4px; }
 .cs-facts dd { margin: 0; }
+.cs-facts-wide { grid-column: 1 / -1; }
+.cs-facts .tags { margin-top: 4px; }
+.cs-facts .tags + .tags { margin-top: 6px; }
 .cs-facts a, .cs-row a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--frame-border); }
 .cs-list { padding-left: 20px; color: var(--muted); font-size: 16px; line-height: 1.6; }
 .cs-list li { margin-bottom: 10px; padding-left: 4px; }
