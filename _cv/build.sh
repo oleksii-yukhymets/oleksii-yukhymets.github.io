@@ -18,3 +18,6 @@ render resume.html "$EN"
 render resume-uk.html "$UK"
 cp "$EN" ../Oleksii-Yukhymets-CV.pdf
 cp "$UK" ../Oleksii-Yukhymets-CV-UA.pdf
+# Earlier full names, kept so cached pages and shared links do not 404.
+cp "$EN" "../CV Oleksii Yukhymets, Product Designer, Design Engineer.pdf"
+cp "$UK" "../CV Олексій Юхимець, продуктовий дизайнер, дизайн-інженер.pdf"
