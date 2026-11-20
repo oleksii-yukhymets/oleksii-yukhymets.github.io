@@ -115,7 +115,7 @@ window.I18N_UK = {
   "l_site": "Сайт",
   "l_case": "Кейс",
   "dm_pd": "B2B SaaS · Фінтех",
-  "dm_ss": "Логістика · E-commerce",
+  "dm_ss": "B2B SaaS · Логістика · E-commerce",
   "dm_mh": "Медицина",
   "dm_rh": "Фудтех",
   "dm_am": "Крипто · Фінтех",
