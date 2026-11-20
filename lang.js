@@ -26,7 +26,7 @@
     });
     // CV links open the PDF in the current language.
     document.querySelectorAll('a[data-cv]').forEach((a) => {
-      a.setAttribute('href', lang === 'uk' ? 'CV Олексій Юхимець, продуктовий дизайнер, дизайн-інженер.pdf' : 'CV Oleksii Yukhymets, Product Designer, Design Engineer.pdf');
+      a.setAttribute('href', lang === 'uk' ? 'CV Олексій Юхимець, продуктовий UX-UI-дизайнер.pdf' : 'CV Oleksii Yukhymets, UX-UI Product Designer.pdf');
     });
     root.lang = lang;
     document.querySelectorAll('.lang-current').forEach((n) => (n.textContent = LANGS[lang]));

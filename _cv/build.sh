@@ -5,8 +5,8 @@
 set -e
 cd "$(dirname "$0")"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-EN="../CV Oleksii Yukhymets, Product Designer, Design Engineer.pdf"
-UK="../CV Олексій Юхимець, продуктовий дизайнер, дизайн-інженер.pdf"
+EN="../CV Oleksii Yukhymets, UX-UI Product Designer.pdf"
+UK="../CV Олексій Юхимець, продуктовий UX-UI-дизайнер.pdf"
 render() {
   "$CHROME" --headless=new --disable-gpu --no-pdf-header-footer \
     --virtual-time-budget=10000 \
